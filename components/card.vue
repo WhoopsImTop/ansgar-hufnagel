@@ -1,0 +1,41 @@
+<template>
+  <div class="card">
+    <div class="card-image">
+      <img :src="cardImage" :alt="cardTitle" />
+    </div>
+    <div class="card-content">
+      <h3>{{ cardTitle }}</h3>
+      <p>{{ cardText }}</p>
+    </div>
+    <div class="card-actions" v-if="cardActionBtnText && cardActionBtnLink">
+      <nuxt-link :to="cardActionBtnLink" class="card-action-btn">{{
+        cardActionBtnText
+      }}</nuxt-link>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+    props: {
+        cardImage: {
+        type: String,
+        },
+        cardTitle: {
+        type: String,
+        },
+        cardText: {
+        type: String,
+        },
+        cardActionBtnText: {
+        type: String,
+        },
+        cardActionBtnLink: {
+        type: String,
+        },
+    },
+};
+</script>
+
+<style>
+</style>
