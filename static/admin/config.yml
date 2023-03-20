@@ -33,7 +33,12 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Inhalt", name: "body", widget: "markdown", required: false }
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - { label: "Landing Titel", name: "landingTitle", widget: "string" }
+          - { label: "Landing Subtitel", name: "landingSubtitle", widget: "markdown", required: false }
       - label: "Inhaltsblock"
         name: "content"
         widget: "list"
