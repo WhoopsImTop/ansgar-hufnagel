@@ -4,7 +4,7 @@
       <div class="img-container">
         <NuxtLogo />
       </div>
-      <div class="link-cintainer">
+      <div class="link-container">
         <nuxt-link
           v-for="(link, index) in links"
           :key="index"
@@ -12,6 +12,11 @@
           class="nuxt-link"
           >{{ link.name }}</nuxt-link
         >
+      </div>
+      <div class="mobile-cross" @click="toggleMobileNav">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
     </div>
   </div>
@@ -56,6 +61,14 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    toggleMobileNav() {
+      const nav = document.querySelector(".link-container");
+      const burger = document.querySelector(".mobile-cross");
+      nav.classList.toggle("active");
+      burger.classList.toggle("active");
+    },
   },
 };
 </script>

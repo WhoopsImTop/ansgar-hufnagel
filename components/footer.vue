@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="footer-content">
     <div class="highlighted">
       <div
         class="content-container text-container row"
         style="justify-content: unset"
       >
-        <div class="col" style="width: 50%; padding: 0 100px 0 0">
+        <div class="col newsletter">
           <h3>Newsletter Abonnieren</h3>
           <p>
             Seien Sie immer auf dem Neusten stand über Termine, Aktionen uvm.
@@ -19,13 +19,21 @@
             <button class="primary-btn">Jetzt Abonnieren</button>
           </div>
         </div>
-        <div class="col" style="width: 50%; padding: 0 0 0 100px">
+        <div class="col booking">
           <h3>Booking</h3>
-          <p style="margin-bottom: 10px;">Kommen Sie mit mir ins Gespräch.</p>
+          <p style="margin-bottom: 10px">Kommen Sie mit mir ins Gespräch.</p>
 
-          <a style="text-decoration: none; color: #000000; font-size: 20px;" href="tel:+49 151 19345725">+49 151 19345725</a>
-          <br>
-          <a style="text-decoration: none; color: #000000; font-size: 20px;" href="mailto:mail@ansgarhufnagel.de">mail@ansgarhufnagel.de</a>
+          <a
+            style="text-decoration: none; color: #000000; font-size: 20px"
+            href="tel:+49 151 19345725"
+            >+49 151 19345725</a
+          >
+          <br />
+          <a
+            style="text-decoration: none; color: #000000; font-size: 20px"
+            href="mailto:mail@ansgarhufnagel.de"
+            >mail@ansgarhufnagel.de</a
+          >
         </div>
       </div>
     </div>
@@ -39,7 +47,7 @@
                 <p>Valentinstraße 7</p>
                 <p>79100 Freiburg</p>
               </div>
-              <div class="col" style="margin-left: 30px">
+              <div class="col">
                 <p>+49 151 19345725</p>
                 <p>mail@ansgarhufnagel.de</p>
               </div>

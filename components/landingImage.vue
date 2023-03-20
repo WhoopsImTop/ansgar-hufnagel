@@ -3,7 +3,7 @@
     class="landing-image"
     :style="'background-image: url(' + backgroundImage + ')'"
   >
-    <div class="content-container">
+    <div class="content-container landing-content-container">
       <div class="landing-text-container">
         <h1>{{ title }}</h1>
         <h2>{{ subtitle }}</h2>

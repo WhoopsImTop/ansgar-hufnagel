@@ -1,0 +1,79 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+locale: de
+
+public_folder: /img
+
+collections:
+  - name: "wichtig"
+    label: "Datenschutz & CO."
+    format: "frontmatter"
+    extension: 'md'
+    folder: "content/wichtig"
+    create: true
+    sortable_fields: ["title"]
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+  - name: "seiten"
+    label: "Seiten"
+    format: "frontmatter"
+    extension: 'md'
+    folder: "content/seiten"
+    create: true
+    sortable_fields: ["title"]
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Inhalt", name: "body", widget: "markdown", required: false }
+      - label: "Inhaltsblock"
+        name: "content"
+        widget: "list"
+        fields:
+          - label: "Karten"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Inhalt", name: "body", widget: "markdown", required: false }
+              - { label: "Link", name: "link", widget: "string", required: false }
+              - { label: "Linktext", name: "linktext", widget: "string", required: false }
+              - { label: "Bild", name: "image", widget: "image", required: false }
+          - label: "Kundenmeinungen"
+            name: "kundenmeindungen"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Inhalt", name: "body", widget: "markdown", required: false }
+              - { label: "Logo der Firma", name: "image", widget: "image", required: false }
+          - label: "Banner"
+            name: "banner"
+            widget: "object"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Inhalt", name: "body", widget: "markdown", required: false }
+              - { label: "Link", name: "link", widget: "string", required: false }
+              - { label: "Linktext", name: "linktext", widget: "string", required: false }
+  - name: "termine"
+    label: "Termine"
+    format: "frontmatter"
+    extension: 'md'
+    folder: "content/termine"
+    create: true
+    sortable_fields: ["title"]
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Inhalt", name: "body", widget: "markdown", required: false }
+      - { label: "Datum", name: "date", widget: "datetime", required: false }
+      - { label: "Ort", name: "location", widget: "map", required: false }
+      - { label: "Link", name: "link", widget: "string", required: false }
+      - { label: "Linktext", name: "linktext", widget: "string", required: false }

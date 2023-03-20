@@ -65,8 +65,14 @@ export default {
   },
   computed: {
     sliderStyles() {
+      let width;
+      if(window.innerWidth < 900) {
+        width = this.testimonials.length * 100;
+      } else {
+        width = this.testimonials.length * this.slideWidth;
+      }
       return {
-        transform: `translateX(-${this.currentSlide * this.slideWidth}px)`,
+        transform: `translateX(-${this.currentSlide * width}px)`,
       };
     },
   },

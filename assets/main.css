@@ -68,6 +68,10 @@ p {
   justify-content: space-between;
 }
 
+.mobile-cross {
+  display: none;
+}
+
 /* content */
 .content-container {
   max-width: 1440px;
@@ -113,16 +117,21 @@ p {
   background-repeat: no-repeat;
 }
 
+.landing-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .landing-text-container {
   position: absolute;
-  left: 50%;
-  bottom: 15vh;
-  transform: translate(-50%, 0%);
+  bottom: 150px;
   text-align: center;
   color: var(--light-text);
 }
 
-.landing-text-container h1, .loader h1 {
+.landing-text-container h1,
+.loader h1 {
   font-size: var(--landing-heading-text);
   line-height: var(--landing-heading-line-height);
   text-transform: uppercase;
@@ -273,6 +282,16 @@ p {
   align-items: flex-end;
 }
 
+.newsletter {
+  max-width: 50%;
+  padding: 0px 50px 0px 0;
+}
+
+.booking {
+  max-width: 50%;
+  padding: 0px 0 0px 50px;
+}
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -295,13 +314,16 @@ p {
   height: 100%;
   background-color: var(--primary-color);
   z-index: 999;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  text-align: center;
-  padding-bottom: 3.7vh;
   z-index: 1000;
   transition: opacity 0.5s ease-in-out;
+}
+
+.loader .text-container {
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
 }
 
 @media (max-width: 1440px) {
@@ -311,5 +333,159 @@ p {
 
   .text-container {
     padding: 100px 40px 150px 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  :root {
+    --landing-heading-text: 50px;
+    --landing-heading-line-height: 50px;
+
+    --landing-subheading-text: 20px;
+    --landing-subheading-line-height: 30px;
+  }
+
+  h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .link-container {
+    display: none;
+  }
+
+  .link-container.active {
+    display: flex;
+    position: fixed;
+    top: 70px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    max-width: 100vw;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 50px 30px;
+  }
+
+  .link-container.active a {
+    margin: 15px 0;
+  }
+
+  .mobile-cross {
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+  }
+
+  .mobile-cross.active .line:first-child {
+    transform: rotate(45deg);
+    transform-origin: 5px 0px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .mobile-cross.active .line:last-child {
+    transform: rotate(-45deg);
+    transform-origin: -2px 1px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .mobile-cross.active .line:nth-child(2) {
+    width: 0px;
+    height: 3px;
+    background-color: var(--dark-text);
+    margin: 3px 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--dark-text);
+    margin: 3px 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  /* loader */
+  .loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+  }
+
+  .loader .text-container {
+    position: absolute;
+    bottom: 110px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    padding: 0;
+  }
+
+  /* landing Container */
+  .landing-text-container {
+    bottom: 50px;
+  }
+
+  /* Content */
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 10px 0;
+  }
+
+  .slide {
+    min-width: 100%;
+  }
+
+  /* footer content */
+  .footer-content .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newsletter {
+    margin-bottom: 100px;
+    max-width: unset;
+    padding: 0;
+  }
+
+  .booking {
+    max-width: unset;
+    padding: 0;
+  }
+
+  .newsletter .row {
+    flex-direction: column;
+  }
+
+  .newsletter .row input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer .col {
+    margin-bottom: 15px;
+  }
+
+  .footer a {
+    margin: 0;
+    display: block
+  }
+
+  .footer .col img:first-child {
+    margin-left: 0;
   }
 }
