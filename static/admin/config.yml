@@ -43,6 +43,8 @@ collections:
         name: "content"
         widget: "list"
         fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Inhalt", name: "body", widget: "markdown", required: false }
           - label: "Karten"
             name: "cards"
             widget: "list"
