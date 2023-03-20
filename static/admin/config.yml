@@ -32,24 +32,24 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", required: false }
       - label: "Landing"
         name: "landing"
         widget: "object"
         fields:
-          - { label: "Landing Titel", name: "landingTitle", widget: "string" }
+          - { label: "Landing Titel", name: "landingTitle", widget: "string", required: false }
           - { label: "Landing Subtitel", name: "landingSubtitle", widget: "markdown", required: false }
       - label: "Inhaltsblock"
         name: "content"
         widget: "list"
         fields:
-          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Titel", name: "title", widget: "string", required: false }
           - { label: "Inhalt", name: "body", widget: "markdown", required: false }
           - label: "Karten"
             name: "cards"
             widget: "list"
             fields:
-              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string", required: false }
               - { label: "Inhalt", name: "body", widget: "markdown", required: false }
               - { label: "Link", name: "link", widget: "string", required: false }
               - { label: "Linktext", name: "linktext", widget: "string", required: false }
@@ -58,14 +58,14 @@ collections:
             name: "kundenmeindungen"
             widget: "list"
             fields:
-              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string", required: false }
               - { label: "Inhalt", name: "body", widget: "markdown", required: false }
               - { label: "Logo der Firma", name: "image", widget: "image", required: false }
           - label: "Banner"
             name: "banner"
             widget: "object"
             fields:
-              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string", required: false} 
               - { label: "Inhalt", name: "body", widget: "markdown", required: false }
               - { label: "Link", name: "link", widget: "string", required: false }
               - { label: "Linktext", name: "linktext", widget: "string", required: false }
@@ -79,7 +79,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Inhalt", name: "body", widget: "markdown", required: false }
       - { label: "Datum", name: "date", widget: "datetime", required: false }
       - { label: "Ort", name: "location", widget: "map", required: false }
