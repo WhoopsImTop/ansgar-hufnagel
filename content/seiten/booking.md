@@ -1,7 +1,7 @@
 ---
-title: Moderation
+title: Booking
 landing:
-  landingTitle: Moderation
+  landingTitle: Booking
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
 content:
   - title: Über mich

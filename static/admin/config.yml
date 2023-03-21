@@ -45,6 +45,8 @@ collections:
         fields:
           - { label: "Titel", name: "title", widget: "string", required: false }
           - { label: "Inhalt", name: "body", widget: "markdown", required: false }
+          - { label: "Inhaltspositionierung", name: "position", widget: "select", options: ["links", "mitte", "rechts"], required: false }
+          - { label: "Hervorgehoben ?", name: "highlight", widget: "boolean", required: false }
           - label: "Karten"
             name: "cards"
             widget: "list"
@@ -54,21 +56,24 @@ collections:
               - { label: "Link", name: "link", widget: "string", required: false }
               - { label: "Linktext", name: "linktext", widget: "string", required: false }
               - { label: "Bild", name: "image", widget: "image", required: false }
-          - label: "Kundenmeinungen"
-            name: "kundenmeindungen"
-            widget: "list"
-            fields:
-              - { label: "Titel", name: "title", widget: "string", required: false }
-              - { label: "Inhalt", name: "body", widget: "markdown", required: false }
-              - { label: "Logo der Firma", name: "image", widget: "image", required: false }
           - label: "Banner"
             name: "banner"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Titel", name: "title", widget: "string", required: false} 
               - { label: "Inhalt", name: "body", widget: "markdown", required: false }
               - { label: "Link", name: "link", widget: "string", required: false }
               - { label: "Linktext", name: "linktext", widget: "string", required: false }
+          - label: "Kundenmeinungen einbinden?"
+            name: "kundenmeinungen"
+            widget: "object"
+            required: false
+            collapsed: true
+            fields:
+              - { label: "Kategorie", name: "category", widget: "select", options: ["Generell", "Moderation", "Poetry Slam", "Kleinkunst", "Workshops", "Kabarett"], required: false }
+              - { label: "Kundenmeinungen anzeigen ?", name: "show", widget: "boolean", required: false }
+          - { label: "Termine einbinden?", name: "termine", widget: "boolean", required: false }
   - name: "termine"
     label: "Termine"
     format: "frontmatter"
@@ -80,8 +85,33 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string", required: false }
-      - { label: "Inhalt", name: "body", widget: "markdown", required: false }
+      - { label: "Ort", name: "ort", widget: "string", required: false }
+      - { label: "Uhrzeit", name: "startTime", widget: "datetime", format: "HH:mm", required: false }
       - { label: "Datum", name: "date", widget: "datetime", required: false }
       - { label: "Ort", name: "location", widget: "map", required: false }
       - { label: "Link", name: "link", widget: "string", required: false }
       - { label: "Linktext", name: "linktext", widget: "string", required: false }
+      - label: "Ersatztermin"
+        name: "alternativeDate"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - { label: "Ersatztermin", name: "date", widget: "date", required: false }
+          - { label: "Ersatzuhrzeit", name: "startTime", widget: "datetime", format: "HH:mm", required: false }
+          - { label: "Ersatzort", name: "location", widget: "string", required: false }
+  - name: "kundenmeinungen"
+    label: "Kundenmeinungen"
+    format: "frontmatter"
+    extension: 'md'
+    folder: "content/kundenmeinungen"
+    create: true
+    sortable_fields: ["title"]
+    editor:
+      preview: false
+    fields:
+      - { label: "Titel", name: "title", widget: "string", required: false }
+      - { label: "Inhalt", name: "body", widget: "markdown", required: false }
+      - { label: "Firma", name: "company", widget: "string", required: false }
+      - { label: "Logo der Firma", name: "image", widget: "image", required: false }
+      - { label: "Kategorie", name: "category", widget: "select", options: ["Generell", "Moderation", "Poetry Slam", "Kleinkunst", "Workshops", "Kabarett"], required: false }

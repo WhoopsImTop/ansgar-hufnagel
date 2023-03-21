@@ -15,7 +15,6 @@
     <component-renderer
       :component="component"
       :testimonials="testimonials"
-      :termine="termine"
       v-for="(component, index) in page.content"
       :key="index"
     ></component-renderer>
@@ -29,15 +28,34 @@ export default {
   name: "IndexPage",
   layout: "default",
   async asyncData({ $content }) {
-    const page = await $content("seiten", "index").fetch();
+    const page = await $content("seiten", "booking").fetch();
     const testimonials = await $content("kundenmeinungen")
-      .where({ category: "Generell" })
+      .where({ category: "Booking" })
       .fetch();
-    const termine = await $content("termine").fetch();
-    return { page, testimonials, termine };
+    return { page, testimonials };
   },
   data() {
-    return {};
+    return {
+      cards: [
+        {
+          cardImage: "moderation.png",
+          cardTitle: "Moderation",
+          cardText: "asdf",
+        },
+        {
+          cardImage: "moderation.png",
+          cardTitle: "Moderation",
+          cardText: "asdf",
+          cardActionBtnText: "asdf",
+          cardActionBtnLink: "/",
+        },
+        {
+          cardImage: "moderation.png",
+          cardTitle: "Moderation",
+          cardText: "asdf",
+        },
+      ],
+    };
   },
   created() {
     setTimeout(() => {

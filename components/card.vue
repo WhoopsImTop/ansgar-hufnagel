@@ -1,11 +1,11 @@
 <template>
   <div class="card">
-    <div class="card-image">
+    <div v-if="cardImage" class="card-image">
       <img :src="cardImage" :alt="cardTitle" />
     </div>
     <div class="card-content">
-      <h3>{{ cardTitle }}</h3>
-      <p>{{ cardText }}</p>
+      <h3 v-if="cardTitle">{{ cardTitle }}</h3>
+      <p v-if="cardText">{{ cardText }}</p>
     </div>
     <div class="card-actions" v-if="cardActionBtnText && cardActionBtnLink">
       <nuxt-link :to="cardActionBtnLink" class="card-action-btn">{{

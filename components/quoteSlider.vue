@@ -12,14 +12,14 @@
               <img :src="testimonial.image" :alt="testimonial.name" />
             </div>
             <div class="testimonial-text">
-              <p>{{ testimonial.text }}</p>
-              <h4>{{ testimonial.name }}</h4>
+              <nuxt-content :document="testimonial"></nuxt-content>
+              <h4 style="margin-top: 15px">{{ testimonial.company }}</h4>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="slider-controls">
+    <div class="slider-controls" v-if="testimonials.length > slidesToShow">
         <div
             class="slide-circle"
             v-for="(testimonial, index) in testimonials"
@@ -33,28 +33,9 @@
   
   <script>
 export default {
+  props: ['testimonials'],
   data() {
     return {
-      testimonials: [
-        {
-          name: "John Doe",
-          image: "path/to/image1.jpg",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          position: "CEO",
-        },
-        {
-          name: "Jane Doe",
-          image: "path/to/image2.jpg",
-          text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-          position: "CTO",
-        },
-        {
-          name: "Bob Smith",
-          image: "path/to/image3.jpg",
-          text: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-          position: "COO",
-        },
-      ],
       currentSlide: 0,
       slidesToShow: 2,
       slideWidth: null,
@@ -65,12 +46,7 @@ export default {
   },
   computed: {
     sliderStyles() {
-      let width;
-      if(window.innerWidth < 900) {
-        width = this.testimonials.length * 100;
-      } else {
-        width = this.testimonials.length * this.slideWidth;
-      }
+      let width = this.testimonials.length * this.slideWidth;
       return {
         transform: `translateX(-${this.currentSlide * width}px)`,
       };

@@ -226,7 +226,7 @@ p {
   align-items: flex-start;
 }
 .testimonial-image {
-  width: 100px;
+  height: 60px;
   overflow: hidden;
   margin-bottom: 15px;
 }
@@ -303,6 +303,10 @@ p {
 
 .col h4 {
   margin-bottom: 10px;
+}
+
+.footer .contact {
+  margin-left: 20px;
 }
 
 /* loader */
@@ -449,6 +453,10 @@ p {
   .footer-content .content-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .footer .contact {
+    margin-left: 0px;
   }
   
   .newsletter {

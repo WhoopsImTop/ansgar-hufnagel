@@ -47,7 +47,7 @@
                 <p>Valentinstraße 7</p>
                 <p>79100 Freiburg</p>
               </div>
-              <div class="col">
+              <div class="col contact">
                 <p>+49 151 19345725</p>
                 <p>mail@ansgarhufnagel.de</p>
               </div>

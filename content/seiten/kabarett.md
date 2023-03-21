@@ -1,7 +1,7 @@
 ---
-title: Moderation
+title: Kabarett
 landing:
-  landingTitle: Moderation
+  landingTitle: Kabarett
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
 content:
   - title: Über mich

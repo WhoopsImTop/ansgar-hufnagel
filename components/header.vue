@@ -4,8 +4,9 @@
       <div class="img-container">
         <NuxtLogo />
       </div>
-      <div class="link-container">
+      <div class="link-container" @click="toggleMobileNav">
         <nuxt-link
+          @click="toggleMobileNav"
           v-for="(link, index) in links"
           :key="index"
           :to="link.path"
@@ -28,8 +29,12 @@ export default {
     return {
       links: [
         {
-          name: "Moderation",
+          name: "Ansgar Hufnagel",
           path: "/",
+        },
+        {
+          name: "Moderation",
+          path: "/moderation",
         },
         {
           name: "Poetry Slam",
@@ -44,20 +49,16 @@ export default {
           path: "/workshops",
         },
         {
+          name: "Termine",
+          path: "/termine",
+        },
+        {
           name: "Shop",
           path: "/shop",
         },
         {
           name: "Booking",
           path: "/booking",
-        },
-        {
-          name: "Termine",
-          path: "/termine",
-        },
-        {
-          name: "Kontakt",
-          path: "/kontakt",
         },
       ],
     };

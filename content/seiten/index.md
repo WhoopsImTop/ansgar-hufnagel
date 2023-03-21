@@ -1,7 +1,7 @@
 ---
-title: Moderation
+title: Ansgar Hufnagel
 landing:
-  landingTitle: Moderation
+  landingTitle: Ansgar hufnagel
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
 content:
   - title: Über mich
@@ -22,4 +22,6 @@ content:
       category: Moderation
       show: true
     position: links
+  - termine: true
+    title: Akutelle Termine
 ---
