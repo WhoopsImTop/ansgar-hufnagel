@@ -13,7 +13,7 @@
             </div>
             <div class="testimonial-text">
               <nuxt-content :document="testimonial"></nuxt-content>
-              <h4 style="margin-top: 15px">{{ testimonial.company }}</h4>
+              <p style="margin-top: 10px; font-weight: 800; font-style: italic;">{{ testimonial.company }}</p>
             </div>
           </div>
         </div>

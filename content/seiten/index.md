@@ -23,5 +23,6 @@ content:
       show: true
     position: links
   - termine: true
-    title: Akutelle Termine
+    title: Aktuelle Termine
+    position: links
 ---

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="UTF-8">
+                <title>Draw a curve between two elements</title>
+                <style>
+            .element {
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              background-color: #333;
+              border-radius: 50%;
+            }
+            .start {
+              top: 50px;
+              left: 50px;
+            }
+            .end {
+              bottom: 250px;
+              right: 20px;
+            }
+            .curve {
+              position: absolute;
+              border: 2px solid red;
+              border-radius: 50%;
+              transform-origin: top left;
+              transform: rotate(-45deg);
+              width: 200px;
+              height: 200px;
+              top: -50px;
+              left: -50px;
+              z-index: 99;
+            }
+          </style>
+            </head>
+            <body>
+                <div id="container">
+                    <div class="element start"></div>
+                    <div class="element end"></div>
+                    <svg id="curve"></svg>
+                </div>
+
+                <script>
+            // Select the two HTML elements
+function drawCurve() {
+const startEl = document.querySelector('.start');
+const endEl = document.querySelector('.end');
+
+// Get the bounding rectangles of the two elements
+const startRect = startEl.getBoundingClientRect();
+const endRect = endEl.getBoundingClientRect();
+
+// Calculate the start and end points of the curve
+const startX = startRect.left + startRect.width / 2;
+const startY = startRect.top + startRect.height / 2;
+const endX = endRect.left + endRect.width / 2;
+const endY = endRect.top + endRect.height / 2;
+
+// Calculate the control points of the curve
+const controlX1 = startX;
+const controlY1 = startY + 20;
+const controlX2 = endX;
+const controlY2 = endY + 20;
+
+// Create the SVG curve element
+let svg = document.getElementById('curve');
+const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+//check if path already exists
+if (svg.childNodes.length > 0) {
+svg.removeChild(svg.childNodes[0]);
+}
+svg.appendChild(path);
+
+// Set the path attributes
+path.setAttribute("fill", "none");
+path.setAttribute("stroke", "black");
+path.setAttribute("d", `M ${startX},${startY} C ${controlX1},${controlY1} ${controlX2},${controlY2} ${endX},${endY}`);
+
+//adjust width and height of svg to fit the curve
+svg.setAttribute("width", Math.max(startX, endX) + 50);
+svg.setAttribute("height", Math.max(startY, endY) + 50);
+}
+
+//move end randomly around the page
+function moveEnd() {
+const endEl = document.querySelector('.end');
+endEl.style.top = Math.random() * 500 + 'px';
+endEl.style.left = Math.random() * 500 + 'px';
+}
+
+//draw curve
+drawCurve();
+
+//move end and redraw curve
+setInterval(() => {
+moveEnd();
+drawCurve();
+}, 1000);
+
+          </script>
+            </body>
+        </html>
+
+    </body>
+</html>

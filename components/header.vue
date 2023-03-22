@@ -2,7 +2,8 @@
   <div class="sticky_nav">
     <div class="content-container nav_row">
       <div class="img-container">
-        <NuxtLogo />
+        <logo style="rotate: 0deg; height: 100px;"/>
+        <nuxt-link to="/" class="nuxt-link main-link" style="text-transform: uppercase; font-weight: 800; font-style: italic;">Ansgar Hufnagel</nuxt-link>
       </div>
       <div class="link-container" @click="toggleMobileNav">
         <nuxt-link
@@ -28,10 +29,6 @@ export default {
   data() {
     return {
       links: [
-        {
-          name: "Ansgar Hufnagel",
-          path: "/",
-        },
         {
           name: "Moderation",
           path: "/moderation",

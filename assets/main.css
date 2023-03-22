@@ -29,7 +29,22 @@ h3 {
   color: var(--dark-text);
 }
 
+h4 {
+  font-size: 30px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  color: var(--dark-text);
+}
+
 p {
+  font-size: var(--paragraph-text);
+  line-height: var(--paragraph-line-height);
+  color: var(--dark-text);
+}
+
+span {
   font-size: var(--paragraph-text);
   line-height: var(--paragraph-line-height);
   color: var(--dark-text);
@@ -42,14 +57,25 @@ p {
   left: 0px;
   right: 0px;
   z-index: 999;
-  background-color: #fff;
+  background-color: var(--primary-color);
   height: 70px;
   display: flex;
   align-items: center;
 }
 
 .img-container svg {
+  top: 10px;
   height: 30px;
+  position: absolute;
+}
+
+.img-container:hover svg{
+  cursor: pointer;
+  animation: swing 1s ease-in-out;
+}
+
+.img-container .main-link {
+  margin-left: 80px
 }
 
 .nuxt-link {
@@ -59,7 +85,9 @@ p {
 }
 
 .nuxt-link-exact-active {
-  color: var(--primary-color);
+  font-style: italic;
+  font-weight: 800;
+  color: var(--dark-text);
 }
 
 .nav_row {
@@ -106,6 +134,59 @@ p {
   font-size: 16px;
   color: var(--dark-text);
   margin-right: 10px;
+}
+
+.termin {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f8f8f8;
+  padding: 10px 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.termin .link {
+  text-decoration: none;
+  color: var(--dark-text);
+  align-self: center;
+  padding: 10px 15px;
+  position: absolute;
+  right: 10px;
+  background-color: var(--primary-color);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 0px;
+}
+
+.terminliste {
+  grid-area: 1 / 1 / 2 / 4;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.map-container {
+  grid-area: 1 / 4 / 2 / 5;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  min-height: 300px;
+}
+
+.calendar-symbol {
+  background-color: var(--dark-text);
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+  text-align: center;
+  margin-right: 20px;
+  color: var(--light-text);
 }
 
 /* landing Image */
@@ -319,7 +400,16 @@ p {
   background-color: var(--primary-color);
   z-index: 999;
   z-index: 1000;
-  transition: opacity 0.5s ease-in-out;
+  animation: fadeOut 1s .2s ease-in-out;
+}
+
+@keyframes fadeOut {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .loader .text-container {
@@ -328,6 +418,32 @@ p {
   left: 0px;
   right: 0px;
   text-align: center;
+}
+
+.loader-logo {
+  margin-bottom: 100px;
+  animation: swing 1s ease-in-out;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-8deg);
+  }
+  60% {
+    transform: rotate(6deg);
+  }
+  80% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @media (max-width: 1440px) {
@@ -343,8 +459,8 @@ p {
 /* Mobile */
 @media (max-width: 900px) {
   :root {
-    --landing-heading-text: 50px;
-    --landing-heading-line-height: 50px;
+    --landing-heading-text: 45px;
+    --landing-heading-line-height: 45px;
 
     --landing-subheading-text: 20px;
     --landing-subheading-line-height: 30px;
@@ -355,8 +471,21 @@ p {
     line-height: 40px;
   }
 
+  h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .link-container {
     display: none;
+  }
+
+  .img-container svg {
+    left: 10px;
+  }
+
+  .img-container .main-link {
+    margin-left: 40px
   }
 
   .link-container.active {
@@ -449,6 +578,31 @@ p {
     min-width: 100%;
   }
 
+  .grid-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .termin .text-content {
+    margin-top: 20px;
+  }
+
+  .termin .link {
+    position: unset;
+    align-self: flex-start;
+    margin-top: 20px;
+  }
+
+  .map-container {
+    display: none;
+  }
+
+  .termin {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
   /* footer content */
   .footer-content .content-container {
     display: flex;
@@ -458,7 +612,7 @@ p {
   .footer .contact {
     margin-left: 0px;
   }
-  
+
   .newsletter {
     margin-bottom: 100px;
     max-width: unset;
@@ -490,7 +644,7 @@ p {
 
   .footer a {
     margin: 0;
-    display: block
+    display: block;
   }
 
   .footer .col img:first-child {

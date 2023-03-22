@@ -1,12 +1,6 @@
 <template>
   <div>
-    <div class="loader">
-      <div class="content-container">
-        <div class="text-container">
-          <h1>{{ page.title }}</h1>
-        </div>
-      </div>
-    </div>
+    <loader :title="page.title"></loader>
     <landingImage
       :backgroundImage="'moderation.png'"
       :title="page.landing.landingTitle"
@@ -56,14 +50,6 @@ export default {
         },
       ],
     };
-  },
-  created() {
-    setTimeout(() => {
-      document.querySelector(".loader").style.opacity = 0;
-    }, 1000);
-    setTimeout(() => {
-      document.querySelector(".loader").style.display = "none";
-    }, 1200);
   },
 };
 </script>

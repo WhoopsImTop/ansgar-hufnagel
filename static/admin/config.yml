@@ -85,10 +85,10 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Datum & Uhrzeit", name: "date", widget: "datetime", required: false }
       - { label: "Ort", name: "ort", widget: "string", required: false }
-      - { label: "Uhrzeit", name: "startTime", widget: "datetime", format: "HH:mm", required: false }
-      - { label: "Datum", name: "date", widget: "datetime", required: false }
       - { label: "Ort", name: "location", widget: "map", required: false }
+      - { label: "Zusatzbemerkung", name: "zusatz", widget: "markdown", required: false }
       - { label: "Link", name: "link", widget: "string", required: false }
       - { label: "Linktext", name: "linktext", widget: "string", required: false }
       - label: "Ersatztermin"
@@ -97,8 +97,8 @@ collections:
         required: false
         collapsed: true
         fields:
-          - { label: "Ersatztermin", name: "date", widget: "date", required: false }
-          - { label: "Ersatzuhrzeit", name: "startTime", widget: "datetime", format: "HH:mm", required: false }
+          - { label: "Ersatztermin anzeigen ?", name: "show", widget: "boolean", required: false, default: false }
+          - { label: "Ersatztermin", name: "alternativeDate", widget: "datetime", required: false }
           - { label: "Ersatzort", name: "location", widget: "string", required: false }
   - name: "kundenmeinungen"
     label: "Kundenmeinungen"

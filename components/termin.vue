@@ -7,7 +7,9 @@
         :termin="termin"
       ></termin-item>
     </div>
-    <div class="map"></div>
+    <div class="map-container">
+      <map-component :termine="termine"></map-component>
+    </div>
   </div>
 </template>
 
