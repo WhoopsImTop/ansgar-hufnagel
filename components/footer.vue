@@ -41,7 +41,7 @@
       <div class="content-container">
         <div class="row">
           <div class="col">
-            <h4>Ansgar Hufnagel</h4>
+            <strong>Ansgar Hufnagel</strong>
             <div class="row">
               <div class="col">
                 <p>Valentinstraße 7</p>
@@ -62,9 +62,9 @@
             </p>
           </div>
           <div class="col">
-            <img src="youtube.svg" alt="youtube" />
-            <img src="facebook.svg" alt="facebook" />
-            <img src="instagram.svg" alt="instagram" />
+            <img src="/youtube.svg" alt="youtube" />
+            <img src="/facebook.svg" alt="facebook" />
+            <img src="/instagram.svg" alt="instagram" />
           </div>
         </div>
       </div>

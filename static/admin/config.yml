@@ -115,3 +115,18 @@ collections:
       - { label: "Firma", name: "company", widget: "string", required: false }
       - { label: "Logo der Firma", name: "image", widget: "image", required: false }
       - { label: "Kategorie", name: "category", widget: "select", options: ["Generell", "Moderation", "Poetry Slam", "Kleinkunst", "Workshops", "Kabarett"], required: false }
+  - name: "produkte"
+    label: "Produkte"
+    format: "frontmatter"
+    extension: 'md'
+    folder: "content/produkte"
+    create: true
+    sortable_fields: ["title", "price"]
+    editor:
+      preview: false
+    fields:
+      - { label: "ID", name: "id", widget: "string", required: true }
+      - { label: "Titel", name: "title", widget: "string", required: true }
+      - { label: "Inhalt", name: "description", widget: "markdown", required: false }
+      - { label: "Preis", name: "price", widget: "number", value_type: "float", required: true }
+      - { label: "Bild", name: "image", widget: "image", required: false }
