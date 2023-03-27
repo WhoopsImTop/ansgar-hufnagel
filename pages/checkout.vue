@@ -1,0 +1,191 @@
+<template>
+  <div>
+    <div class="content-container text-container checkout-page-grid">
+      <div class="checkout-form">
+        <h1>Kasse</h1>
+        <form>
+          <!-- From should ask for name, last_name, email, phone, address, city, state, zip, country  -->
+          <input type="text" placeholder="Vorname" v-model="name" />
+          <input type="text" placeholder="Nachname" v-model="last_name" />
+          <input type="email" placeholder="Email" v-model="email" />
+          <input type="tel" placeholder="Telefon" v-model="phone" />
+          <input
+            type="text"
+            placeholder="Straße und Hausnummer"
+            v-model="address"
+          />
+          <input type="text" placeholder="Stadt" v-model="city" />
+          <input type="text" placeholder="PLZ" v-model="zip" />
+          <input type="text" placeholder="Bundesland" v-model="state" />
+          <select placeholder="Land" v-model="country">
+            <option
+              v-for="country in defaultCountries"
+              :key="country.code"
+              :value="country.name"
+            >
+              {{ country.name }}
+            </option>
+          </select>
+        </form>
+      </div>
+      <div class="checkout-information">
+        <div class="information-container">
+          <div class="cartItems">
+            <h2>Ihr Einkaufwagen</h2>
+            <table>
+              <tbody>
+                <tr v-for="item in line_items" :key="item.id">
+                  <td>{{ item.name }}</td>
+                  <td>{{ item.quantity }} x</td>
+                  <td>{{ item.price.toFixed(2) }}€</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="total-price">
+              <strong>Gesamt: {{ totalPrice.toFixed(2) }}€</strong>
+            </div>
+          </div>
+          <div class="checkout-options">
+            <h2>Zahlungsmethode</h2>
+            <div class="payment-methods">
+              <div class="payment-method">
+                <input
+                  type="radio"
+                  id="paypal"
+                  name="payment"
+                  value="paypal"
+                  v-model="paymentMethod"
+                />
+                <label for="paypal">PayPal</label>
+              </div>
+              <div class="payment-method">
+                <input
+                  type="radio"
+                  id="ueberweisung"
+                  name="payment"
+                  value="ueberweisung"
+                  v-model="paymentMethod"
+                />
+                <label for="ueberweisung">Überweisung</label>
+              </div>
+            </div>
+            <div class="checkout-button">
+              <button class="product-btn" @click="generateCheckout()">
+                {{ loading ? "verarbeiten..." : "Kostenpflichtig Bestellen" }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import axios from "axios";
+export default {
+  data: () => {
+    return {
+      name: "",
+      last_name: "",
+      email: "",
+      phone: "",
+      address: "",
+      city: "",
+      state: "",
+      zip: "",
+      country: "Bitte auswählen",
+      defaultCountries: [
+        { name: "Deutschland", code: "DE" },
+        { name: "Österreich", code: "AT" },
+        { name: "Schweiz", code: "CH" },
+      ],
+      line_items: [],
+      totalPrice: 0,
+      paymentMethod: null,
+      loading: false,
+    };
+  },
+  methods: {
+    validateCheckout() {
+      if (
+        this.name &&
+        this.last_name &&
+        this.email &&
+        this.phone &&
+        this.address &&
+        this.city &&
+        this.state &&
+        this.zip &&
+        this.country
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+    generateCheckout() {
+      if (this.validateCheckout()) {
+        this.loading = true;
+        if (this.paymentMethod == "paypal") {
+          let headers = {
+            "Access-Control-Allow-Headers": "*",
+          };
+
+          let data = JSON.stringify({
+            name: this.name,
+            last_name: this.last_name,
+            email: this.email,
+            phone: this.phone,
+            address: this.address,
+            city: this.city,
+            state: this.state,
+            zip: this.zip,
+            country: this.country,
+            lineItems: this.line_items,
+            total: this.totalPrice,
+          });
+
+          let config = {
+            method: "post",
+            maxBodyLength: Infinity,
+            url: "http://api.farsight-festival.de/checkout",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            data: data,
+          };
+
+          axios
+            .request(config)
+            .then((response) => {
+              window.location.href = response.data;
+              this.loading = false;
+            })
+            .catch((error) => {
+              console.log(error);
+              this.loading = false;
+            });
+        }
+      } else {
+        alert("Bitte füllen Sie alle Felder aus.");
+      }
+    },
+  },
+  mounted() {
+    let cartItems = JSON.parse(localStorage.getItem("cartItems"));
+    cartItems.forEach((cartItem) => {
+      this.line_items.push({
+        id: cartItem.id,
+        quantity: cartItem.quantity,
+        price: cartItem.price,
+        name: cartItem.title,
+      });
+      this.totalPrice += cartItem.price * cartItem.quantity;
+    });
+  },
+};
+</script>
+
+<style>
+</style>
