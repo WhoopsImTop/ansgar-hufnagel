@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="card-container" v-show="showCart">
+      <div class="closeBtn" @click="showCart = false">X</div>
       <div class="product-list">
         <div class="list-item" v-for="product in cartItems" :key="product.id">
           <img width="70px" :src="product.image" :alt="product.title" />

@@ -84,6 +84,10 @@
 <script>
 import axios from "axios";
 export default {
+  async asyncData({ $content, params }) {
+    const produkte = await $content("produkte").fetch();
+    return { produkte };
+  },
   data: () => {
     return {
       name: "",
@@ -174,14 +178,18 @@ export default {
   },
   mounted() {
     let cartItems = JSON.parse(localStorage.getItem("cartItems"));
-    cartItems.forEach((cartItem) => {
-      this.line_items.push({
-        id: cartItem.id,
-        quantity: cartItem.quantity,
-        price: cartItem.price,
-        name: cartItem.title,
-      });
-      this.totalPrice += cartItem.price * cartItem.quantity;
+    //get cartItems id and quantity and search id in products
+    this.line_items = cartItems.map((item) => {
+      let product = this.produkte.find(
+        (product) => product.id == item.id
+      );
+      this.totalPrice += product.price * item.quantity;
+      return {
+        id: item.id,
+        name: product.title,
+        quantity: item.quantity,
+        price: product.price,
+      };
     });
   },
 };

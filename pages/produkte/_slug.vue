@@ -34,6 +34,7 @@ export default {
   methods: {
     addToCart(product) {
       this.loading = true;
+      product.quantity = 1;
       this.$store.commit("setCartItems", product);
       setTimeout(() => {
         this.loading = false;
