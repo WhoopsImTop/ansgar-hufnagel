@@ -8,8 +8,8 @@
       <p v-if="cardText">{{ cardText }}</p>
     </div>
     <div class="card-actions" v-if="cardActionBtnText && cardActionBtnLink">
-      <nuxt-link :to="cardActionBtnLink" class="card-action-btn">{{
-        cardActionBtnText
+      <nuxt-link :to="cardActionBtnText" class="card-action-btn">{{
+        cardActionBtnLink
       }}</nuxt-link>
     </div>
   </div>

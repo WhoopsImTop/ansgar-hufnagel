@@ -3,6 +3,7 @@ title: Moderation
 landing:
   landingTitle: Moderation
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
+  landingImage: /img/moderation.png
 content:
   - title: Über mich
     body: a﻿sdfasf asdf

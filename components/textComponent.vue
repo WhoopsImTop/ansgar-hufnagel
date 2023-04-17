@@ -1,7 +1,15 @@
 <template>
   <div :style="positionStyle">
-    <h3 v-if="title">{{ title }}</h3>
-    <p v-if="text">{{ text }}</p>
+      <h3 v-if="title">{{ title }}</h3>
+      <p
+        v-if="text"
+        :class="image ? 'w-50' : ''"
+        :style="position == 'mitte' ? 'text-align: center' : ''"
+        v-html="$md.render(text)"
+      ></p>
+      <div class="image">
+        <img v-if="image" :src="image" :alt="title" />
+      </div>
   </div>
 </template>
 
@@ -13,6 +21,10 @@ export default {
     },
     text: {
       type: String,
+    },
+    image: {
+      type: String,
+      default: null,
     },
     position: {
       type: String,

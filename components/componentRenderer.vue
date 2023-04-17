@@ -1,12 +1,16 @@
 <template>
   <div>
-    <sectionContainer :highlighted="component.highlight">
+    <sectionContainer
+      :highlighted="component.highlight"
+      :image="component.image"
+    >
       <template v-slot:content>
-      <textComponent
-        :title="component.title"
-        :text="component.body"
-        :position="component.position"
-      ></textComponent>
+        <textComponent
+          :title="component.title"
+          :text="component.body"
+          :position="component.position"
+          :image="component.image"
+        ></textComponent>
         <div class="card-grid" v-if="component.cards">
           <card
             v-for="card in component.cards"
@@ -18,7 +22,10 @@
             :cardActionBtnLink="card.linktext"
           ></card>
         </div>
-        <quote-slider v-if="component.kundenmeinungen" :testimonials="testimonials"></quote-slider>
+        <quote-slider
+          v-if="component.kundenmeinungen"
+          :quoteCategory="component.kundenmeinungen"
+        ></quote-slider>
         <termin v-if="component.termine" :termine="termine"></termin>
       </template>
     </sectionContainer>
@@ -27,7 +34,7 @@
 
 <script>
 export default {
-  props: ["component", "testimonials", "termine"],
+  props: ["component", "termine"],
 };
 </script>
 

@@ -16,7 +16,6 @@ export default {
   computed: {
     markers() {
       if(this.termine.length == 0) return "";
-      console.log(this.termine);
       return this.termine.map((termin) => {
         let coordinates = JSON.parse(termin.location).coordinates;
         return {

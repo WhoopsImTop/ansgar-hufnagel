@@ -3,6 +3,7 @@ title: Ansgar Hufnagel
 landing:
   landingTitle: Ansgar Hufnagel
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
+  landingImage: /img/moderation.png
 content:
   - title: Ansgar Hufnagel ist ein echter Tausendsassa
     body: >-
@@ -16,6 +17,7 @@ content:
 
       Einfach so aus Liebe.
     highlight: false
+    position: mitte
   - title: Meine Angebote
     highlight: true
     position: links
@@ -25,23 +27,30 @@ content:
           eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
           diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum.
+        image: /img/pressefoto_thorolf_clemens_.png
+        linktext: ""
+        link: ""
       - title: Moderation
         body: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
           eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
           diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum.
-        linktext: Jetzt buchen!
+        linktext: JETZT BUCHEN
+        image: /img/pressefoto_ansgar_hufnagel_fotograf_frank_kloten.png
+        link: "#kontakt"
       - title: Workshops
         body: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
           eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
           diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum.
+        image: /img/fotocredit_michaela_klaehn.png
+  - termine: true
+    title: Aktuelle Termine
+    position: links
   - title: Kundenmeinungen
     kundenmeinungen:
       category: Moderation
       show: true
     position: links
-  - termine: true
-    title: Aktuelle Termine
-    position: links
+    termine: false
 ---

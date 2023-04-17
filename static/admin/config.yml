@@ -37,6 +37,7 @@ collections:
         name: "landing"
         widget: "object"
         fields:
+          - { label: "Landing Bild", name: "landingImage", widget: "image", required: false }
           - { label: "Landing Titel", name: "landingTitle", widget: "string", required: false }
           - { label: "Landing Subtitel", name: "landingSubtitle", widget: "markdown", required: false }
       - label: "Inhaltsblock"
@@ -45,6 +46,7 @@ collections:
         fields:
           - { label: "Titel", name: "title", widget: "string", required: false }
           - { label: "Inhalt", name: "body", widget: "markdown", required: false }
+          - { label: "Bild", name: "image", widget: "image", required: false }
           - { label: "Inhaltspositionierung", name: "position", widget: "select", options: ["links", "mitte", "rechts"], required: false }
           - { label: "Hervorgehoben ?", name: "highlight", widget: "boolean", required: false }
           - label: "Karten"

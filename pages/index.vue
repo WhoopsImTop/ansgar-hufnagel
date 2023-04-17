@@ -2,13 +2,12 @@
   <div>
     <loader :title="page.title"></loader>
     <landingImage
-      :backgroundImage="'moderation.png'"
+      :backgroundImage="page.landing.landingImage"
       :title="page.landing.landingTitle"
       :subtitle="page.landing.landingSubtitle"
     ></landingImage>
     <component-renderer
       :component="component"
-      :testimonials="testimonials"
       :termine="termine"
       v-for="(component, index) in page.content"
       :key="index"

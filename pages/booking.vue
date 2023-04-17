@@ -2,7 +2,7 @@
   <div>
     <loader :title="page.title"></loader>
     <landingImage
-      :backgroundImage="'moderation.png'"
+      :backgroundImage="page.landing.landingImage"
       :title="page.landing.landingTitle"
       :subtitle="page.landing.landingSubtitle"
     ></landingImage>

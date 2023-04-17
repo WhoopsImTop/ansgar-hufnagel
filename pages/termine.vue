@@ -2,7 +2,7 @@
   <div>
     <loader :title="page.title"></loader>
     <landingImage
-      :backgroundImage="'moderation.png'"
+      :backgroundImage="page.landing.landingImage"
       :title="page.landing.landingTitle"
       :subtitle="page.landing.landingSubtitle"
     ></landingImage>
@@ -29,27 +29,7 @@ export default {
     return { page, testimonials };
   },
   data() {
-    return {
-      cards: [
-        {
-          cardImage: "moderation.png",
-          cardTitle: "Moderation",
-          cardText: "asdf",
-        },
-        {
-          cardImage: "moderation.png",
-          cardTitle: "Moderation",
-          cardText: "asdf",
-          cardActionBtnText: "asdf",
-          cardActionBtnLink: "/",
-        },
-        {
-          cardImage: "moderation.png",
-          cardTitle: "Moderation",
-          cardText: "asdf",
-        },
-      ],
-    };
+    return {};
   },
 };
 </script>
