@@ -1,7 +1,7 @@
 ---
 title: Ansgar Hufnagel
 landing:
-  landingTitle: Ansgar hufnagel
+  landingTitle: Ansgar Hufnagel
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
 content:
   - title: Ansgar Hufnagel ist ein echter Tausendsassa
@@ -16,16 +16,26 @@ content:
 
       Einfach so aus Liebe.
     highlight: false
-  - title: Moderation
+  - title: Meine Angebote
     highlight: true
     position: links
     cards:
-      - title: assdf
-        body: s﻿dfsdf
-      - title: sdfsdf
-        body: s﻿dfsdf
-      - title: dfgdg
-        body: d﻿fgdfg
+      - title: Poetry Slam
+        body: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+          diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum.
+      - title: Moderation
+        body: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+          diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum.
+        linktext: Jetzt buchen!
+      - title: Workshops
+        body: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+          diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum.
   - title: Kundenmeinungen
     kundenmeinungen:
       category: Moderation
