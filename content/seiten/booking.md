@@ -4,8 +4,8 @@ landing:
   landingTitle: Booking
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
 content:
-  - title: Über mich
-    body: a﻿sdfasf asdf
+  - title: Buchen Sie mich
+    body: sdfhgfgewkfgskgfkjvshlgkvbdsflkhvldsfhkfvnsdlöfkvödnbnd
     highlight: false
   - title: Moderation
     highlight: true
