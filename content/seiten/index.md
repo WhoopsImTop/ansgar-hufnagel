@@ -4,8 +4,17 @@ landing:
   landingTitle: Ansgar hufnagel
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
 content:
-  - title: Über mich
-    body: a﻿sdfasf asdf
+  - title: Ansgar Hufnagel ist ein echter Tausendsassa
+    body: >-
+      Dummytext … Ob als Moderator, Slam Poet, Kabarettist, als Teil des Duos
+      „Einfach so“, Improtheater, Schauspieler, Autor, Texter oder Rapper.
+      Ansgar Hufnagel bewegt sich mit einer Leichtigkeit und
+      Selbstverändlichkeitauf den unterschiedlichsten Bühnen, als wäre es sein
+      zu Hause. Sympathisch, offen und klar.
+
+      Den Stift stets zur Hand wird notiert, gereimt und geschrieben.
+
+      Einfach so aus Liebe.
     highlight: false
   - title: Moderation
     highlight: true
