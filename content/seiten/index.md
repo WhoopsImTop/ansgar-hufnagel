@@ -3,7 +3,7 @@ title: Ansgar Hufnagel
 landing:
   landingTitle: Ansgar Hufnagel
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
-  landingImage: /img/moderation.png
+  landingImage: /img/ansgar-hufnagel-kleinkunst.jpg
 content:
   - title: Ansgar Hufnagel ist ein echter Tausendsassa
     body: >-
