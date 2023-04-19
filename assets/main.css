@@ -656,6 +656,14 @@ td {
   margin-top: 5px;
 }
 
+.footer-content .highlighted {
+  background-image: linear-gradient(90deg, transparent 50%, black 50%);
+}
+
+.booking h3, .booking p, .booking a {
+  color: var(--light-text) !important;
+}
+
 .footer p {
   color: var(--light-text);
   font-weight: regular;
@@ -711,6 +719,10 @@ td {
   z-index: 999;
   z-index: 1000;
   animation: fadeOut 1s .2s ease-in-out;
+}
+
+.shop-items {
+  padding: 50px 40px !important;
 }
 
 @keyframes fadeOut {
@@ -926,6 +938,11 @@ td {
     display: flex;
     flex-direction: column;
   }
+
+  .footer-content .highlighted {
+    background-image: linear-gradient(180deg, transparent 50%, black 50%);
+  }
+  
 
   .footer .contact {
     margin-left: 0px;

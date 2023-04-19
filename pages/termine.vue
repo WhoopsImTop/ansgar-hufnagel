@@ -9,6 +9,7 @@
     <component-renderer
       :component="component"
       :testimonials="testimonials"
+      :termine="termine"
       v-for="(component, index) in page.content"
       :key="index"
     ></component-renderer>
@@ -26,7 +27,8 @@ export default {
     const testimonials = await $content("kundenmeinungen")
       .where({ category: "Termine" })
       .fetch();
-    return { page, testimonials };
+    const termine = await $content("termine").fetch();
+    return { page, testimonials, termine };
   },
   data() {
     return {};

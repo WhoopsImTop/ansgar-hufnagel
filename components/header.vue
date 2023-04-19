@@ -1,8 +1,8 @@
 <template>
   <div class="sticky_nav">
     <div class="content-container nav_row">
-      <div class="img-container">
-        <logo style="rotate: 0deg; height: 100px;"/>
+      <div class="img-container" @click="goHome()">
+        <logo style="rotate: 0deg; height: 100px;" />
         <nuxt-link to="/" class="nuxt-link main-link" style="text-transform: uppercase; font-weight: 800; font-style: italic;">Ansgar Hufnagel</nuxt-link>
       </div>
       <div class="link-container" @click="toggleMobileNav">
@@ -34,16 +34,16 @@ export default {
           path: "/moderation",
         },
         {
+          name: "Workshops",
+          path: "/workshops",
+        },
+        {
           name: "Poetry Slam",
           path: "/poetry-slam",
         },
         {
           name: "Kabarett",
           path: "/kabarett",
-        },
-        {
-          name: "Workshops",
-          path: "/workshops",
         },
         {
           name: "Termine",
@@ -66,6 +66,9 @@ export default {
       const burger = document.querySelector(".mobile-cross");
       nav.classList.toggle("active");
       burger.classList.toggle("active");
+    },
+    goHome() {
+      this.$router.push("/");
     },
   },
 };

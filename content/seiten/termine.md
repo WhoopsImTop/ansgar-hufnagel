@@ -3,23 +3,7 @@ title: Termine
 landing:
   landingTitle: Termine
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
+  landingImage: /img/poesiepopcorn_original-13.jpg
 content:
-  - title: Über mich
-    body: a﻿sdfasf asdf
-    highlight: false
-  - title: Moderation
-    highlight: true
-    position: links
-    cards:
-      - title: assdf
-        body: s﻿dfsdf
-      - title: sdfsdf
-        body: s﻿dfsdf
-      - title: dfgdg
-        body: d﻿fgdfg
-  - title: Kundenmeinungen
-    kundenmeinungen:
-      category: Moderation
-      show: true
-    position: links
+  - termine: true
 ---
