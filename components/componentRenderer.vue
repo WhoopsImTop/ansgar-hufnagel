@@ -26,7 +26,7 @@
           v-if="component.kundenmeinungen"
           :quoteCategory="component.kundenmeinungen"
         ></quote-slider>
-        <termin v-if="component.termine" :termine="termine"></termin>
+        <termin style="margin-top: 30px" v-if="component.termine" :termine="termine"></termin>
       </template>
     </sectionContainer>
   </div>
