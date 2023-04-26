@@ -76,6 +76,30 @@ collections:
               - { label: "Kategorie", name: "category", widget: "select", options: ["Generell", "Moderation", "Poetry Slam", "Kleinkunst", "Workshops", "Kabarett"], required: false }
               - { label: "Kundenmeinungen anzeigen ?", name: "show", widget: "boolean", required: false }
           - { label: "Termine einbinden?", name: "termine", widget: "boolean", required: false }
+          - label: "Bild Gallerie"
+            name: "gallery"
+            widget: "list"
+            required: false
+            collapsed: true
+            fields:
+              - { label: "Bild", name: "image", widget: "image", required: false }
+              - { label: "Bildunterschrift", name: "caption", widget: "string", required: false }
+          - label: "Videos"
+            name: "videos"
+            widget: "list"
+            required: false
+            collapsed: true
+            fields:
+              - { label: "Video", name: "video", widget: "string", required: false }
+              - { label: "Video Untertitel", name: "caption", widget: "string", required: false }
+          - label: "Downloads"
+            name: "downloads"
+            widget: "list"
+            required: false
+            collapsed: true
+            fields:
+              - { label: "Datei", name: "file", widget: "file", required: false }
+              - { label: "Datei Untertitel", name: "caption", widget: "string", required: false }
   - name: "termine"
     label: "Termine"
     format: "frontmatter"

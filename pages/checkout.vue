@@ -3,21 +3,22 @@
     <div class="content-container text-container checkout-page-grid">
       <div class="checkout-form">
         <h1>Kasse</h1>
-        <form>
+        <form autocomplete="on">
           <!-- From should ask for name, last_name, email, phone, address, city, state, zip, country  -->
-          <input type="text" placeholder="Vorname" v-model="name" />
-          <input type="text" placeholder="Nachname" v-model="last_name" />
-          <input type="email" placeholder="Email" v-model="email" />
-          <input type="tel" placeholder="Telefon" v-model="phone" />
+          <input type="text" placeholder="Vorname" name="name" v-model="name" />
+          <input type="text" placeholder="Nachname" name="nachname" v-model="last_name" />
+          <input type="email" placeholder="Email" name="email" v-model="email" />
+          <input type="tel" placeholder="Telefon" name="phone" v-model="phone" />
           <input
             type="text"
+            name="street"
             placeholder="Straße und Hausnummer"
             v-model="address"
           />
-          <input type="text" placeholder="Stadt" v-model="city" />
-          <input type="text" placeholder="PLZ" v-model="zip" />
-          <input type="text" placeholder="Bundesland" v-model="state" />
-          <select placeholder="Land" v-model="country">
+          <input type="text" placeholder="Stadt" name="city" v-model="city" />
+          <input type="text" placeholder="PLZ" name="zip" v-model="zip" />
+          <input type="text" placeholder="Bundesland" name="state" v-model="state" />
+          <select placeholder="Land" name="land" v-model="country">
             <option
               v-for="country in defaultCountries"
               :key="country.code"
@@ -26,6 +27,7 @@
               {{ country.name }}
             </option>
           </select>
+          <label><input type="checkbox" v-model="datenschutz" style="margin-right: 10px">Ich stimme den AGB's und der verarbeiterung meiner Daten gemäß der Datenschutzerklärung zu.</label>
         </form>
       </div>
       <div class="checkout-information">
@@ -99,6 +101,7 @@ export default {
       state: "",
       zip: "",
       country: "Bitte auswählen",
+      datenschutz: false,
       defaultCountries: [
         { name: "Deutschland", code: "DE" },
         { name: "Österreich", code: "AT" },
@@ -121,7 +124,8 @@ export default {
         this.city &&
         this.state &&
         this.zip &&
-        this.country
+        this.country &&
+        this.datenschutz
       ) {
         return true;
       } else {

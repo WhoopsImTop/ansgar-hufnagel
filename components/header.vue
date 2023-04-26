@@ -50,6 +50,10 @@ export default {
           path: "/termine",
         },
         {
+          name: "Musik",
+          path: "/musik",
+        },
+        {
           name: "Shop",
           path: "/shop",
         },

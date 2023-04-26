@@ -18,6 +18,17 @@ content:
       der Künstler\*innen auf Diversität zu achten.
     highlight: false
     position: mitte
+  - title: Gallerie
+    gallery:
+      - image: /img/fotocredit_franziska_groß_1.jpg
+        caption: Moderation
+      - image: /img/poetry_slam.png
+        caption: Poetryslam
+      - image: /img/ansgar-hufnagel-kleinkunst.jpg
+        caption: Moderation
+      - image: /img/dsc_8197.png
+        caption: Kunst
+    highlight: true
   - title: Kundenmeinungen
     kundenmeinungen:
       category: Moderation

@@ -1,17 +1,32 @@
 ---
 id: "02"
-title: Trinkflasche
+title: '"Der Maulwurf"'
 description: >-
-  **Das neue Album vom Tausendsassa: Lyrik, Slam, Rap, Leichtigkeit**
+  **Comicband mit Lyrik, Illustrationen und dem Maulwurf.**
 
 
-  Der Tausendsassa ist ein Gegenentwurf zum klassischen Bild, das Deutschrap oft abgibt. Hier gibt es keinen harten, wütenden Rap mit Geschichten von der Straße oder Gangster-Attitüden; die Texte drehen sich nicht um Geld, Fame und Frauen. Hier spricht ein Anti-Gangster, der sich selbst gerne auf die Schippe nimmt und absolut keinen Bock auf Stress hat. Der ungefährlichste Rapper der Welt eben.
+  Vom Bühnenduo Einfach so (Cäcilia Bosch & Ansgar Hufnagel)
 
 
-  Ob das Album nun trotz, wegen oder einfach nur während Corona entstanden ist – schwer zu sagen. Jedenfalls ist es jetzt da. Die Zutaten: Der alltägliche Wahnsinn eines Künstlers. Liebe. Widersprüche. Ansprüche. Realität. Verpackt in: Lyrik, Slam und Rap. Versehen mit: Leidenschaft, Humor, Selbstironie und Ernsthaftigkeit. Dieses Album ist Ausdruck der Bereitschaft, trotz allem „all in“ zu gehen. Jetzt erst recht. ABERSOWASVON.
+  *Als der Maulwurf uns begegnete, er den Weg zu diesem Buch sich ebnete, von da an ging er auf den Wecker, ambivalent frei Schnauze raus, ein Superheld mit Phlegma*
 
 
-  *CD © 2022 Tausendsassa*
-price: 22.10
+  *Der Alltag dieses Wesens mit Geschichten vollgepackt, ist ungeschminkt zu lesen ein hoch erfreulich Akt. Die Zierde all der Worte, die Liebe jedes Pinselstrichs verbindet all die Orte und das Hirn hält es schön frisch.*
+
+
+  **Cäcilia Bosch:**
+
+
+  Cäcilia Bosch fühlt sich dem Maulwurf sehr verwandt, denn ihr Name bedeutet übersetzt: die Blinde. Für ein bisschen Schokolade im Schokofondue sind beide immer zu haben. Der Maulwurf hat sich auf dem stillen Örtchen in ihr Leben geschlichen und ist nun nicht mehr fortzudenken.
+
+
+  **Ansgar Hufnagel:**
+
+
+  Ansgar Hufnagel ist ein echter Tausendsassa und lässt sich auch von einem Maulwurf hinter seinem Muskelberg nicht aufhalten.
+
+
+  ISBN: 3751999434 | 2. Auflage 2020 | 232 Seiten
+price: 11.9
 image: /img/image.jpeg
 ---

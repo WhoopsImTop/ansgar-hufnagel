@@ -26,7 +26,17 @@
           v-if="component.kundenmeinungen"
           :quoteCategory="component.kundenmeinungen"
         ></quote-slider>
-        <termin style="margin-top: 30px" v-if="component.termine" :termine="termine"></termin>
+        <termin
+          style="margin-top: 30px"
+          v-if="component.termine"
+          :termine="termine"
+        ></termin>
+        <gallery
+          v-if="component.gallery"
+          :gallery="component.gallery"
+        ></gallery>
+        <media v-if="component.videos" :videos="component.videos"></media>
+        <downloads v-if="component.downloads" :downloads="component.downloads"></downloads>
       </template>
     </sectionContainer>
   </div>

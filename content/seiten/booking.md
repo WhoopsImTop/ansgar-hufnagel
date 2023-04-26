@@ -6,9 +6,18 @@ landing:
   landingImage: /img/fotocredit_franziska_groß_1.jpg
 content:
   - title: Buchen Sie mich
-    body: Für die meisten Veranstaltungen übernehme ich die Moderation und die
-      künstlerische Leitung (Organisation). Mit den Veranstalter*innen
-      vereinbare ich in der Regel ein festes Budget, mit dem ich planen kann.
+    body: Sie können Ansgar Hufnagel für Events, Jahresfeste, Firmenfeiern,
+      Hochzeiten, Geburts-tage und alle möglichen anderen Veranstaltungen
+      buchen. Auf dieser Seite finden Sie ei-nen Überblick über die
+      künstlerischen Tätigkeiten.
     highlight: false
     position: links
+  - title: Downloads
+    highlight: false
+    position: links
+    downloads:
+      - file: /img/pressetexte.pdf
+        caption: Pressetext
+      - file: /img/pressetexte.pdf
+        caption: Pressetext
 ---

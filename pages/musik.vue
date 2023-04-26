@@ -1,0 +1,33 @@
+<template>
+  <div>
+    <loader :title="page.title"></loader>
+    <landingImage
+      :backgroundImage="page.landing.landingImage"
+      :title="page.landing.landingTitle"
+      :subtitle="page.landing.landingSubtitle"
+    ></landingImage>
+    <component-renderer
+      :component="component"
+      :testimonials="testimonials"
+      :termine="termine"
+      v-for="(component, index) in page.content"
+      :key="index"
+    ></component-renderer>
+  </div>
+</template>
+
+<script>
+import componentRenderer from "~/components/componentRenderer.vue";
+export default {
+  components: { componentRenderer },
+  name: "IndexPage",
+  layout: "default",
+  async asyncData({ $content }) {
+    const page = await $content("seiten", "musik").fetch();
+    return { page };
+  },
+  data() {
+    return {};
+  },
+};
+</script>

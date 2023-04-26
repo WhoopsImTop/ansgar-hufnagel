@@ -13,5 +13,5 @@ description: >-
 
   *CD © 2022 Tausendsassa*
 price: 14.9
-image: /img/image.jpeg
+image: /img/abersowasvon.jpeg
 ---
