@@ -6,18 +6,24 @@ landing:
   landingImage: /img/ansgar-234.jpg
 content:
   - title: Über mich
-    body: "Mit Fernglas und mit Lupe blickt Ansgar Hufnagel auf die Unmöglichkeiten
-      und das Banale in uns und um uns und um uns herum. Dabei nimmt er kein
-      Blatt vor den Mund und gibt seinem ersten Soloprogramm voller Überzeugung
-      den Titel: „Das ist Kunst.“ Die Kunst zu leben? Die Kunst zu lieben? Die
-      Kunst zu schwadronieren? Was ist, wer ist, wo ist Kunst und warum
-      überhaupt? Ansgar Hufnagel stellt die Welt auf den Kopf. Zielstrebig wie
-      eine Zünd-schnur drückt der den roten Knopf. Damit kein Stein auf dem
-      anderen bleibt – dabei bleibt nicht eingeschweißt. Poetry Kabarettheißt
-      Wortwitz und Reime, heißt eintauchen, abtauchen und das nicht alleine. Das
-      ist Kunst. Unterhaltsam. Konkret. Absurd. MitLiebe für’s Detail! Überzeugt
-      Euch selbst und kommt vorbei."
+    body: >-
+      Stell dir vor, du kannst deine Gedanken zur Welt, in der wir leben, auf
+      Papier und in eine andere Form bringen. Stell dir vor, dein Leben ist ein
+      Film und du hast die Hauptrolle. Was würdest du tun?\
+
+      Was würdest du sagen? Was bewegt dich? In welcher Welt leben wir und in welcher Welt willst du leben?\
+
+      \
+
+      Beim Poetry Slam Workshop wird mit unterschiedlichen Ansätzen gearbeitet, um die Synapsen zum Glühen zu bringen und die Kreativität zu fördern. Zwischen Schreibimpulsen und der konkreten Performance eines Textes wird sich der Kunstform Poetry Slam mit seinen unterschiedlichen Facetten auf vielfältige Weise genähert: Ob Rap, Poetry Slam, Comedy, Gedicht oder Kurzgeschichte oder alles zusammen?\
+
+      \
+
+      Finde deinen Weg, um deine Geschichte, auf deine Art und Weise zu erzählen.\
+
+      Du kannst dich ausprobieren, deiner Fantasie freien Lauf lassen, ob ernst, lustig, persönlich, tiefgründig, politische oder völlig absurd und sinnfrei -  beim Poetry Slam Workshop geht es darum, Grenzen zu sprengen und sich auszutoben.
     highlight: false
+    position: mitte
   - title: Meine Angebote
     highlight: true
     position: links
