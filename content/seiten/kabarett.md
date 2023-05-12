@@ -3,7 +3,7 @@ title: Kabarett
 landing:
   landingTitle: Kabarett
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
-  landingImage: /img/dsc_7976.jpg
+  landingImage: /img/dsc_8120_ausschn_bea2.jpg
 content:
   - title: Kabarett
     body: >-
