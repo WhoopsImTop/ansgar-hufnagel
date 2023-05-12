@@ -3,7 +3,7 @@ title: Kabarett
 landing:
   landingTitle: Kabarett
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
-  landingImage: /img/gruppe-1.png
+  landingImage: /img/dsc_7976.jpg
 content:
   - title: Kabarett
     body: 'Mit Fernglas und mit Lupe blickt Ansgar Hufnagel auf die Unmöglichkeiten
