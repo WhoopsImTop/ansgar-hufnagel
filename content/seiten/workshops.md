@@ -3,7 +3,7 @@ title: Workshops
 landing:
   landingTitle: Workshops
   landingSubtitle: MIT ANSGAR HUFNAGEL
-  landingImage: /img/gruppe-1.png
+  landingImage: /img/ansgar-234.jpg
 content:
   - title: Über mich
     body: "Mit Fernglas und mit Lupe blickt Ansgar Hufnagel auf die Unmöglichkeiten
