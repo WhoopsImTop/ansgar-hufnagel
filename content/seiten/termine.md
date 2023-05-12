@@ -3,7 +3,7 @@ title: Termine
 landing:
   landingTitle: Termine
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
-  landingImage: /img/slam_märz-32.jpg
+  landingImage: /img/postkarte-newsletter.jpg
 content:
   - termine: true
     title: Meine Termine
