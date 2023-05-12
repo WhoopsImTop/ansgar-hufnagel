@@ -3,7 +3,7 @@ title: Booking
 landing:
   landingTitle: Booking
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
-  landingImage: /img/fluxuriös-fb.jpg
+  landingImage: /img/fluxuriös-fb.jpg
 content:
   - title: Buchen Sie mich
     body: Sie können Ansgar Hufnagel für Events, Jahresfeste, Firmenfeiern,
