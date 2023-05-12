@@ -5,13 +5,13 @@ landing:
   landingSubtitle: MIT ANSGAR HUFNAGEL
   landingImage: /img/ansgar-3.jpg
 content:
-  - title: Über mich
+  - title: Poetry Slam Workshops
     body: >-
       Stell dir vor, du kannst deine Gedanken zur Welt, in der wir leben, auf
       Papier und in eine andere Form bringen. Stell dir vor, dein Leben ist ein
-      Film und du hast die Hauptrolle. Was würdest du tun?\
-
-      Was würdest du sagen? Was bewegt dich? In welcher Welt leben wir und in welcher Welt willst du leben?\
+      Film und du hast die Hauptrolle. Was würdest du tun? Was würdest du sagen?
+      Was bewegt dich? In welcher Welt leben wir und in welcher Welt willst du
+      leben?\
 
       \
 
