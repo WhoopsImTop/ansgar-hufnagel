@@ -3,7 +3,7 @@ title: Workshops
 landing:
   landingTitle: Workshops
   landingSubtitle: MIT ANSGAR HUFNAGEL
-  landingImage: /img/ansgar-3.jpg
+  landingImage: /img/ansgar-42.jpg
 content:
   - title: Poetry Slam Workshops
     body: >-
