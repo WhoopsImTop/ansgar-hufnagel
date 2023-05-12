@@ -41,4 +41,6 @@ content:
         caption: Tausendsassa - Sag es laut
       - caption: Tausendsassa - Cappylove (Official Video)
         video: https://www.youtube.com/embed/HP6g6VXEHXc
+      - video: https://www.youtube.com/watch?v=6CYMSwtqiVY
+        caption: Tausendsassa - Immer Nie
 ---
