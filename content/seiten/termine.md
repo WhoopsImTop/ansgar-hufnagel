@@ -3,7 +3,7 @@ title: Termine
 landing:
   landingTitle: Termine
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
-  landingImage: /img/poesiepopcorn_original-13.jpg
+  landingImage: /img/slam_märz-32.jpg
 content:
   - termine: true
     title: Meine Termine
