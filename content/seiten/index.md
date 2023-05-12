@@ -7,15 +7,15 @@ landing:
 content:
   - title: Ansgar Hufnagel ist ein echter Tausendsassa
     body: >-
-      Ob als Moderator, Slam Poet, Kabarettist, als Teil des Duos „Einfach so“,
-      Improtheater, Schauspieler, Autor, Texter oder Rapper. Ansgar Hufnagel
-      bewegt sich mit einer Leichtigkeit und Selbstverändlichkeitauf den
-      unterschiedlichsten Bühnen, als wäre es sein zu Hause. Sympathisch, offen
-      und klar.
+      Ob als Moderator, Slam Poet, Kabarettist oder ungefährlichster Rapper der
+      Welt. Ansgar Hufnagel bewegt sich mit einer Leichtigkeit und
+      Selbstverständlichkeit auf den unterschiedlichsten Bühnen, als wäre es
+      sein zu Hause. Sympathisch, offen und klar.
 
-      Den Stift stets zur Hand wird notiert, gereimt und geschrieben.
 
-      Einfach so aus Liebe.
+      Mit Wortwitz und Charme wird das Publikum dort abgeholt, wo es gerade ist. Anderen Künstler:Innen wird die Bühne bereitet oder selbst das Zepter geschwungen.\
+
+      Warum? Weil er nicht anders kann.Ansgar Hufnagel liebt die Kunst, die Bühne und alles drumherum!
     highlight: false
     position: mitte
   - title: Meine Angebote
