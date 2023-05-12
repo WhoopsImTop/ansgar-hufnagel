@@ -10,7 +10,7 @@ content:
       Ob als Moderator, Slam Poet, Kabarettist oder ungefährlichster Rapper der
       Welt. \
 
-      Ansgar Hufnagel bewegt sich mit einer Leichtigkeit und Selbstverständlichkeit auf den unterschiedlichsten Bühnen, als wäre es sein zu Hause. Sympathisch, offen und klar.
+      Ansgar Hufnagel bewegt sich mit einer Leichtigkeit und Selbstverständlichkeit auf den unterschiedlichsten Bühnen,                                                                                                                            als wäre es sein zu Hause. Sympathisch, offen und klar.
 
 
       Mit Wortwitz und Charme wird das Publikum dort abgeholt, wo es gerade ist. \
