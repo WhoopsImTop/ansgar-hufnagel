@@ -26,8 +26,6 @@ content:
 
       Ein Gegenentwurf zum klassischen Bild, das die Rapszene oft abgibt.\
 
-       \
-
       Hier spricht ein Anti-Gangster, der sogfite Rapper, der sich selbst gerne auf die Schippe nimmt und absolut keinen Bock auf Stress hat. 
 
 
