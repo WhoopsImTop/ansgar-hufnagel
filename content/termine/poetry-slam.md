@@ -10,8 +10,8 @@ zusatz: Ebneter Kultursommer
 alternativeDate:
   date: 2023-03-21T12:00:00.000Z
   startTime: 09:43
-  location: Waldkirch
-  alternativeDate: 2023-03-22T12:01:55.013Z
+  location: ""
+  alternativeDate: 2023-03-22T12:01:00.000Z
   show: false
 ---
 F﻿reiburg im Breisgau
