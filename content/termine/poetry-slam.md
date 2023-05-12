@@ -12,6 +12,6 @@ alternativeDate:
   startTime: 09:43
   location: Waldkirch
   alternativeDate: 2023-03-22T12:01:55.013Z
-  show: true
+  show: false
 ---
 F﻿reiburg im Breisgau
