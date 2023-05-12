@@ -44,6 +44,7 @@ content:
           diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum.
         image: /img/fotocredit_michaela_klaehn.png
+    body: s﻿adfadsf
   - termine: true
     title: Aktuelle Termine
     position: links
