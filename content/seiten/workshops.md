@@ -3,7 +3,7 @@ title: Workshops
 landing:
   landingTitle: Workshops
   landingSubtitle: MIT ANSGAR HUFNAGEL
-  landingImage: /img/ansgar-234.jpg
+  landingImage: /img/ansgar-3.jpg
 content:
   - title: Über mich
     body: >-
