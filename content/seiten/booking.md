@@ -3,7 +3,7 @@ title: Booking
 landing:
   landingTitle: Booking
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
-  landingImage: /img/fotocredit_franziska_groß_1.jpg
+  landingImage: /img/fotocredit_michaela_klaehn.jpg
 content:
   - title: Buchen Sie mich
     body: Sie können Ansgar Hufnagel für Events, Jahresfeste, Firmenfeiern,
