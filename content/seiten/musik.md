@@ -41,4 +41,6 @@ content:
         video: https://www.youtube.com/embed/HP6g6VXEHXc
       - video: https://www.youtube.com/watch?v=6CYMSwtqiVY
         caption: Tausendsassa - Immer Nie
+    highlight: true
+    title: ""
 ---
