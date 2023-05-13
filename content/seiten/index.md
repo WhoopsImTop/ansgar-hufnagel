@@ -44,7 +44,7 @@ content:
           bestimmt das Publikum, welche\*r Poet\*in am Ende des Slams als Sieger*in von\
 
           der Bühne geht.
-        image: /img/fotocredit_franziska_groß_3.jpg
+        image: /img/veranstaltungen-instagram.jpg
         linktext: JETZT BUCHEN
         link: "#kontakt"
       - title: Moderation
@@ -61,11 +61,17 @@ content:
         image: /img/fotocredit_michaela_klaehn.jpg
         link: "#kontakt"
       - title: Workshops
-        body: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-          diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum.
-        image: /img/fotocredit_michaela_klaehn.png
+        body: >-
+          Bei einem Poetry Slam Workshop mit Ansgar Hufnagel werden die Synapsen
+          zum Glühen gebracht und Stifte leer geschrieben. Alles kann und nichts
+          muss. Zwischen Schreibimpulsen und der konkreten Performance eines
+          Textes wird sich der Kunstform Poetry Slam mit seinen
+          unterschiedlichen Facetten auf vielfältige Weise genähert: Ob Rap,
+          Poetry Slam, Comedy, Gedicht oder Kurzgeschichte oder alles zusammen?
+
+
+          Ob ernst, lustig, persönlich, tiefgründig, politisch oder völlig absurd - beim Poetry Slam Workshop mit Ansgar Hufnagel geht es darum, den eigenen Text Leben einzuhauchen.
+        image: /img/herrtausendsassa-instagram.jpg
     body: ""
   - termine: true
     title: Aktuelle Termine
