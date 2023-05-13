@@ -20,14 +20,18 @@ content:
     position: mitte
   - title: Gallerie
     gallery:
-      - image: /img/fotocredit_franziska_groß_1.jpg
-        caption: Moderation
-      - image: /img/poetry_slam.png
-        caption: Poetryslam
-      - image: /img/ansgar-hufnagel-kleinkunst.jpg
-        caption: Moderation
-      - image: /img/dsc_8197.png
-        caption: Kunst
+      - image: /img/slam_märz-21.jpg
+      - image: /img/5.jpg
+      - image: /img/4.jpg
+      - image: /img/3.jpg
+      - image: /img/2.jpg
+      - image: /img/44.jpg
+      - image: /img/33.jpg
+      - image: /img/22.jpg
+      - image: /img/11.jpg
+      - image: /img/66.jpg
+      - {}
+      - {}
     highlight: true
   - title: Kundenmeinungen
     kundenmeinungen:
