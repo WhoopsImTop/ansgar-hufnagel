@@ -1,5 +1,5 @@
 ---
-title: Poetry Slam - Moderation
+title: Slam 46 - Moderation
 date: 2023-05-23T18:00:58.810Z
 ort: Theater Bar, Freiburg
 location: '{"type":"Point","coordinates":[7.8451016,47.9955224]}'
