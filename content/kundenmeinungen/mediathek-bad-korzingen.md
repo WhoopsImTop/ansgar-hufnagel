@@ -1,5 +1,5 @@
 ---
-title: Mediathek (bad Korzingen)
+title: Mediathek (Bad Krozingen)
 company: Rustam Mantyeyev, Leitung Mediathek Bad Krozingen
 image: /img/mediathek_bad_krozingen.png
 category: Moderation
