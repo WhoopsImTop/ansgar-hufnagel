@@ -30,7 +30,7 @@ content:
 
       Die textliche Vielfalt kennt quasi keine Grenzen - wo sich manch eine*r der Lyrik verschreibt, plaudert ein*e andere*r im lockeren Prosastil anekdotenhaft aus seinem Alltag, wieder andere zeigen sich politisch mit deutlichen Ansagen und ausufernde Wortspielereien sind ebenso häufig anzutreffen, wie philosophische Denkausflüge, die das Publikum gerne mal herausfordern.
     image: /img/dsc_8197.png
-  - title: Kundenmeinungen
+  - title: Referenzen
     kundenmeinungen:
       category: Moderation
       show: true
