@@ -76,7 +76,7 @@ content:
   - termine: true
     title: Aktuelle Termine
     position: links
-  - title: Kundenmeinungen
+  - title: Referenzen
     kundenmeinungen:
       category: Moderation
       show: true
