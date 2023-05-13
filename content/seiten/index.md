@@ -30,20 +30,12 @@ content:
     position: links
     cards:
       - title: Poetry Slam
-        body: >-
-          Ansgar Hufnagel organisiert und moderiert im Jahr etwa 50 Poetry Slam
+        body: Ansgar Hufnagel organisiert und moderiert im Jahr etwa 50 Poetry Slam
           Veranstaltungen in Süddeutschland. Sein weitreichendes Netzwerk
           erstreckt sich über den ganzen Deutschsprachigen Raum. Wer mit Ansgar
           Hufnagel eine Veranstaltung plant und durchführt ist in sicheren
-          Händen und kann sich eine souveränen und unterhaltsamen Moderation
+          Händen und kann sich einer souveränen und unterhaltsamen Moderation
           sicher sein.
-
-
-          Ein Poetry Slam ist ein moderner Dichterwettstreit, bei dem Poet*innen mit selbstgeschriebenen Texten und festem Zeitlimit gegeneinander antreten. Dabei\
-
-          bestimmt das Publikum, welche\*r Poet\*in am Ende des Slams als Sieger*in von\
-
-          der Bühne geht.
         image: /img/veranstaltungen-instagram.jpg
         linktext: JETZT BUCHEN
         link: "#kontakt"
