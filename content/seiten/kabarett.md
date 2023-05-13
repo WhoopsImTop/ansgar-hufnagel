@@ -41,7 +41,7 @@ content:
 
       Poetry / Kabarett / Rap Chanson / Lesung
     image: /img/foto-was-ist-kabarett.jpg
-  - title: Kundenmeinungen
+  - title: Presse und Referenzen
     kundenmeinungen:
       category: Moderation
       show: true
