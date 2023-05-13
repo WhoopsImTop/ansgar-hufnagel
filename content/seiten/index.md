@@ -43,26 +43,20 @@ content:
         body: Die Moderationen von Ansgar Hufnagel leben von humorvoller
           Publikumsinteraktion, gekonntem Stimmungsaufbau und eigenen kleinen
           Anekdoten und Texten, um das Publikum zu unterhalten und die Bühne für
-          den nächsten Akteur / die nächste Akteurin frei zu machen. Dabei geht
-          es um mehr, als nur durch den Abend zu führen. Ansgar Hufnagel sieht
-          seine Aufgabe auch darin, dass sich alle anwesenden Personen wohl
-          fühlen und sich ganz auf den jeweiligen Anlass einlassen können. Mit
-          Ansgar Hufnagel als Moderator haben sie einen profesionellen,
-          sympathischen und gut vernetzten Ansprechpartner.
+          den nächsten Akteur / die nächste Akteurin frei zu machen. Mit Ansgar
+          Hufnagel als Moderator haben sie einen profesionellen, sympathischen
+          und gut vernetzten Ansprechpartner.
         linktext: JETZT BUCHEN
         image: /img/herrtausendsassa-instagram-kopie.jpg
         link: "#kontakt"
       - title: Workshops
-        body: >-
-          Bei einem Poetry Slam Workshop mit Ansgar Hufnagel werden die Synapsen
-          zum Glühen gebracht und Stifte leer geschrieben. Alles kann und nichts
+        body: Bei einem Poetry Slam Workshop mit Ansgar Hufnagel werden die Synapsen zum
+          Glühen gebracht und Stifte leer geschrieben. Alles kann und nichts
           muss. Zwischen Schreibimpulsen und der konkreten Performance eines
           Textes wird sich der Kunstform Poetry Slam mit seinen
-          unterschiedlichen Facetten auf vielfältige Weise genähert: Ob Rap,
-          Poetry Slam, Comedy, Gedicht oder Kurzgeschichte oder alles zusammen?
-
-
-          Ob ernst, lustig, persönlich, tiefgründig, politisch oder völlig absurd - beim Poetry Slam Workshop mit Ansgar Hufnagel geht es darum, den eigenen Text Leben einzuhauchen.
+          unterschiedlichen Facetten auf vielfältige Weise genähert. Beim Poetry
+          Slam Workshop mit Ansgar Hufnagel geht es darum, den eigenen Text
+          Leben einzuhauchen.
         image: /img/herrtausendsassa-instagram.jpg
     body: ""
   - termine: true
