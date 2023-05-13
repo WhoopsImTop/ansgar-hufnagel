@@ -38,7 +38,7 @@ content:
           sicher sein.
         image: /img/veranstaltungen-instagram.jpg
         linktext: JETZT BUCHEN
-        link: mail@ansgarhufnagel.de
+        link: https://ansgar-hufnagel.netlify.app/booking
       - title: Moderation
         body: Die Moderationen von Ansgar Hufnagel leben von humorvoller
           Publikumsinteraktion, gekonntem Stimmungsaufbau und eigenen kleinen
@@ -48,7 +48,7 @@ content:
           und gut vernetzten Ansprechpartner.
         linktext: JETZT BUCHEN
         image: /img/herrtausendsassa-instagram-kopie.jpg
-        link: mail@ansgarhufnagel.de
+        link: https://ansgar-hufnagel.netlify.app/booking
       - title: Workshops
         body: Bei einem Poetry Slam Workshop mit Ansgar Hufnagel werden die Synapsen zum
           Glühen gebracht und Stifte leer geschrieben. Zwischen Schreibimpulsen
@@ -58,7 +58,7 @@ content:
           darum, den eigenen Text Leben einzuhauchen.
         image: /img/herrtausendsassa-instagram-kopie-2.jpg
         linktext: JETZT BUCHEN
-        link: mail@ansgarhufnagel.de
+        link: https://ansgar-hufnagel.netlify.app/booking
     body: ""
   - termine: true
     title: Aktuelle Termine
