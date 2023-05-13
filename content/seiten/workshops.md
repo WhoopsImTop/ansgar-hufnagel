@@ -29,20 +29,29 @@ content:
     position: links
     cards:
       - title: Poetry Slam
-        body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Viverra ipsum nunc
-          aliquet
-        image: /img/poetry_slam.png
+        body: Ansgar Hufnagel organisiert und moderiert im Jahr etwa 50 Poetry Slam
+          Veranstaltungen in Süddeutschland. Sein weitreichendes Netzwerk
+          erstreckt sich über den ganzen Deutschsprachigen Raum. Wer mit Ansgar
+          Hufnagel eine Veranstaltung plant und durchführt ist in sicheren
+          Händen und kann sich einer souveränen und unterhaltsamen Moderation
+          sicher sein.
+        image: /img/66.jpg
       - title: Moderation
-        body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Viverra ipsum nunc
-          aliquet
-        image: /img/pressefoto_ansgar_hufnagel_fotograf_frank_kloten.png
+        body: Die Moderationen von Ansgar Hufnagel leben von humorvoller
+          Publikumsinteraktion, gekonntem Stimmungsaufbau und eigenen kleinen
+          Anekdoten und Texten, um das Publikum zu unterhalten und die Bühne für
+          den nächsten Akteur / die nächste Akteurin frei zu machen. Mit Ansgar
+          Hufnagel als Moderator haben sie einen profesionellen, sympathischen
+          und gut vernetzten Ansprechpartner.
+        image: /img/herrtausendsassa-instagram-kopie.jpg
       - title: Workshops
-        body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Viverra ipsum nunc
-          aliquet
-        image: /img/fotocredit_michaela_klaehn.png
+        body: Bei einem Poetry Slam Workshop mit Ansgar Hufnagel werden die Synapsen zum
+          Glühen gebracht und Stifte leer geschrieben. Zwischen Schreibimpulsen
+          und der konkreten Performance eines Textes wird sich der Kunstform
+          Poetry Slam mit seinen unterschiedlichen Facetten auf vielfältige
+          Weise genähert. Beim Poetry Slam Workshop mit Ansgar Hufnagel geht es
+          darum, den eigenen Text Leben einzuhauchen.
+        image: /img/herrtausendsassa-instagram.jpg
   - title: Teilnehmer*innen Stimmen
     kundenmeinungen:
       category: Moderation
