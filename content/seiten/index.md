@@ -38,7 +38,7 @@ content:
           sicher sein.
         image: /img/veranstaltungen-instagram.jpg
         linktext: JETZT BUCHEN
-        link: "#kontakt"
+        link: mail@ansgarhufnagel.de
       - title: Moderation
         body: Die Moderationen von Ansgar Hufnagel leben von humorvoller
           Publikumsinteraktion, gekonntem Stimmungsaufbau und eigenen kleinen
@@ -48,7 +48,7 @@ content:
           und gut vernetzten Ansprechpartner.
         linktext: JETZT BUCHEN
         image: /img/herrtausendsassa-instagram-kopie.jpg
-        link: "#kontakt"
+        link: mail@ansgarhufnagel.de
       - title: Workshops
         body: Bei einem Poetry Slam Workshop mit Ansgar Hufnagel werden die Synapsen zum
           Glühen gebracht und Stifte leer geschrieben. Zwischen Schreibimpulsen
@@ -56,7 +56,9 @@ content:
           Poetry Slam mit seinen unterschiedlichen Facetten auf vielfältige
           Weise genähert. Beim Poetry Slam Workshop mit Ansgar Hufnagel geht es
           darum, den eigenen Text Leben einzuhauchen.
-        image: /img/herrtausendsassa-instagram.jpg
+        image: /img/herrtausendsassa-instagram-kopie-2.jpg
+        linktext: JETZT BUCHEN
+        link: mail@ansgarhufnagel.de
     body: ""
   - termine: true
     title: Aktuelle Termine
