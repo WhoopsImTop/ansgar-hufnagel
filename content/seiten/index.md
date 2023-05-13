@@ -51,12 +51,11 @@ content:
         link: "#kontakt"
       - title: Workshops
         body: Bei einem Poetry Slam Workshop mit Ansgar Hufnagel werden die Synapsen zum
-          Glühen gebracht und Stifte leer geschrieben. Alles kann und nichts
-          muss. Zwischen Schreibimpulsen und der konkreten Performance eines
-          Textes wird sich der Kunstform Poetry Slam mit seinen
-          unterschiedlichen Facetten auf vielfältige Weise genähert. Beim Poetry
-          Slam Workshop mit Ansgar Hufnagel geht es darum, den eigenen Text
-          Leben einzuhauchen.
+          Glühen gebracht und Stifte leer geschrieben. Zwischen Schreibimpulsen
+          und der konkreten Performance eines Textes wird sich der Kunstform
+          Poetry Slam mit seinen unterschiedlichen Facetten auf vielfältige
+          Weise genähert. Beim Poetry Slam Workshop mit Ansgar Hufnagel geht es
+          darum, den eigenen Text Leben einzuhauchen.
         image: /img/herrtausendsassa-instagram.jpg
     body: ""
   - termine: true
