@@ -58,7 +58,7 @@ content:
           Ansgar Hufnagel als Moderator haben sie einen profesionellen,
           sympathischen und gut vernetzten Ansprechpartner.
         linktext: JETZT BUCHEN
-        image: /img/fotocredit_michaela_klaehn.jpg
+        image: /img/herrtausendsassa-instagram-kopie.jpg
         link: "#kontakt"
       - title: Workshops
         body: >-
