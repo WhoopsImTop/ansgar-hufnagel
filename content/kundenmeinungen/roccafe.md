@@ -1,5 +1,5 @@
 ---
-title: Roccafe
+title: Roccafé, Denzlingen
 company: Rüdiger Nübling, Leitung roccafé Denzlingen
 image: /img/roccafe.png
 category: Moderation
