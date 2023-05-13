@@ -37,7 +37,7 @@ content:
       - image: /img/1.jpg
       - image: /img/5-kopie.jpg
     highlight: true
-  - title: Kundenmeinungen
+  - title: Referenzen
     kundenmeinungen:
       category: Moderation
       show: true
