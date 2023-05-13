@@ -56,7 +56,7 @@ content:
           Poetry Slam mit seinen unterschiedlichen Facetten auf vielfältige
           Weise genähert. Beim Poetry Slam Workshop mit Ansgar Hufnagel geht es
           darum, den eigenen Text Leben einzuhauchen.
-        image: /img/herrtausendsassa-instagram-kopie-2.jpg
+        image: /img/herrtausendsassa-instagram12.jpg
         linktext: JETZT BUCHEN
         link: https://ansgar-hufnagel.netlify.app/booking
     body: ""
