@@ -32,7 +32,7 @@ content:
     image: /img/3-kopie.jpg
   - title: Referenzen
     kundenmeinungen:
-      category: Moderation
+      category: Poetry Slam
       show: true
     position: links
 ---

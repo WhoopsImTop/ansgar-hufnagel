@@ -3,8 +3,6 @@ title: "Poetry Slam - Moderation "
 date: 2023-06-15T18:00:18.827Z
 ort: Ebnet, Freiburg im Breisgau
 location: '{"type":"Point","coordinates":[7.9036512,47.9859565]}'
-link: https://khri8.com
-linktext: Tickets
 startTime: 14:00
 zusatz: Ebneter Kultursommer
 alternativeDate:

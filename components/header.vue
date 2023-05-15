@@ -2,8 +2,17 @@
   <div class="sticky_nav">
     <div class="content-container nav_row">
       <div class="img-container" @click="goHome()">
-        <logo style="rotate: 0deg; height: 100px;" />
-        <nuxt-link to="/" class="nuxt-link main-link" style="text-transform: uppercase; font-weight: 800; font-style: italic;">Ansgar Hufnagel</nuxt-link>
+        <logo style="rotate: 0deg; height: 100px" />
+        <nuxt-link
+          to="/"
+          class="nuxt-link main-link"
+          style="
+            text-transform: uppercase;
+            font-weight: 800;
+            font-style: italic;
+          "
+          >Ansgar Hufnagel</nuxt-link
+        >
       </div>
       <div class="link-container" @click="toggleMobileNav">
         <nuxt-link
@@ -19,6 +28,17 @@
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
+      </div>
+      <div class="sticky-socials">
+        <a href="https://www.youtube.com/herrtausendsassa" target="_blank"
+          ><img src="/youtube.svg" alt="youtube"
+        /></a>
+        <a href="https://www.fb.com/herrtausendsassa" target="_blank"
+          ><img src="/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://www.instagram.com/herrtausendsassa" target="_blank"
+          ><img src="/instagram.svg" alt="instagram"
+        /></a>
       </div>
     </div>
   </div>

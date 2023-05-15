@@ -13,6 +13,19 @@
       v-for="(component, index) in page.content"
       :key="index"
     ></component-renderer>
+    <div class="content-container text-container floating">
+      <h3>Spotify</h3>
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/artist/4uVgLanzASZrrBo7DDJEXH?utm_source=generator"
+        width="100%"
+        height="352"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
   </div>
 </template>
 
@@ -31,3 +44,6 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+</style>

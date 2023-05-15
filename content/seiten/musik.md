@@ -32,14 +32,14 @@ content:
       Der ungefährlichste Rapper der Welt eben.
   - videos:
       - caption: Tausendsassa - Love, Peace & Unity
-        video: https://www.youtube.com/watch?v=KQXDN7yZfLY
+        video: https://www.youtube.com/embed/KQXDN7yZfLY
       - video: https://www.youtube.com/embed/M2byN-KAF8A
         caption: Tausendsassa - Infaulenza (Official Video)
-      - video: https://www.youtube.com/watch?v=sRxyxmXk-44
+      - video: https://www.youtube.com/embed/sRxyxmXk-44
         caption: Tausendsassa - Sag es laut
       - caption: Tausendsassa - Cappylove (Official Video)
         video: https://www.youtube.com/embed/HP6g6VXEHXc
-      - video: https://www.youtube.com/watch?v=6CYMSwtqiVY
+      - video: https://www.youtube.com/embed/6CYMSwtqiVY
         caption: Tausendsassa - Immer Nie
     highlight: true
     title: ""

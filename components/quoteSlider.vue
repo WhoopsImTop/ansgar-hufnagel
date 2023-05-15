@@ -47,7 +47,7 @@ export default {
   async beforeMount() {
     console.log(this.quoteCategory);
     const testimonials = await this.$content("kundenmeinungen")
-      .where({ category: this.quoteCategory.category })
+      .where({ category: this.quoteCategory })
       .fetch();
     this.testimonials = testimonials;
   },
@@ -56,7 +56,7 @@ export default {
   },
   computed: {
     sliderStyles() {
-      let width = this.testimonials.length * this.slideWidth;
+      let width = this.slideWidth;
       return {
         transform: `translateX(-${this.currentSlide * width}px)`,
       };

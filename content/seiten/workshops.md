@@ -60,7 +60,7 @@ content:
         linktext: JETZT BUCHEN
   - title: Teilnehmer*innen Stimmen
     kundenmeinungen:
-      category: Moderation
+      category: Workshops
       show: true
     position: links
 ---

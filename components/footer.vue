@@ -22,18 +22,25 @@
         <div class="col booking">
           <h3>Booking</h3>
           <p style="margin-bottom: 10px">Kommen Sie mit mir ins Gespräch.</p>
-
-          <a
-            style="text-decoration: none; color: #000000; font-size: 20px"
-            href="tel:+49 151 19345725"
-            >+49 151 19345725</a
-          >
-          <br />
-          <a
-            style="text-decoration: none; color: #000000; font-size: 20px"
-            href="mailto:mail@ansgarhufnagel.de"
-            >mail@ansgarhufnagel.de</a
-          >
+          <p>
+            <a
+              style="text-decoration: none; color: #000000; font-size: 20px"
+              href="tel:+49 151 19345725"
+              >+49 151 19345725</a
+            >
+          </p>
+          <p>
+            <a
+              style="
+                text-decoration: none;
+                color: #000000;
+                font-size: 20px;
+                margin-top: 20px;
+              "
+              href="mailto:mail@ansgarhufnagel.de"
+              >mail@ansgarhufnagel.de</a
+            >
+          </p>
         </div>
       </div>
     </div>
@@ -62,9 +69,9 @@
             </p>
           </div>
           <div class="col">
-            <img src="/youtube.svg" alt="youtube" />
-            <img src="/facebook.svg" alt="facebook" />
-            <img src="/instagram.svg" alt="instagram" />
+            <a href="https://www.youtube.com/herrtausendsassa" target="_blank"><img src="/youtube.svg" alt="youtube" /></a>
+            <a href="https://www.fb.com/herrtausendsassa" target="_blank"><img src="/facebook.svg" alt="facebook" /></a>
+            <a href="https://www.instagram.com/herrtausendsassa" target="_blank"><img src="/instagram.svg" alt="instagram" /></a>
           </div>
         </div>
       </div>

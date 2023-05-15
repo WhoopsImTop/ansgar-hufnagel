@@ -4,9 +4,6 @@ date: 2023-06-10T18:00:36.642Z
 ort: Kulturaggregat, Freiburg
 location: '{"type":"Point","coordinates":[7.8545082,47.9901146]}'
 zusatz: >-
-  KALEIDOSKOP – Music, Talk ’n Show
-
-
   KALEIDOSKOP ist eine genreübergreifende Talk Show mit Live Performance Auftritten aus unterschiedlichen Sparten.
 
 

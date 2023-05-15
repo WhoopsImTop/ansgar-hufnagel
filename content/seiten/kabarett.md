@@ -43,7 +43,7 @@ content:
     image: /img/foto-was-ist-kabarett.jpg
   - title: Presse und Referenzen
     kundenmeinungen:
-      category: Moderation
+      category: Kabarett
       show: true
     position: links
 ---
