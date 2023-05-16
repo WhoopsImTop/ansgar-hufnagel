@@ -18,15 +18,17 @@ content:
     highlight: false
     image: ""
     position: mitte
-  - title: Aktuelles Programm
+  - title: "Aktuelles Programm: Das ist Kunst"
     highlight: true
     position: links
     cards: []
     body: >-
-      #### Das ist Kunst
-
-
-      Mit Fernglas und mit Lupe blickt Ansgar Hufnagel auf die Unmöglichkeiten und das Banale in uns und um uns und um uns herum. Dabei nimmt er kein Blatt vor den Mund und gibt seinem ersten Soloprogramm voller Überzeugung den Titel: „Das ist Kunst." Die Kunst zu leben? Die Kunst zu lieben? Die Kunst zu schwadronieren? Was ist, wer ist, wo ist Kunst und warum überhaupt? 
+      Mit Fernglas und mit Lupe blickt Ansgar Hufnagel auf die Unmöglichkeiten
+      und das Banale in uns und um uns und um uns herum. Dabei nimmt er kein
+      Blatt vor den Mund und gibt seinem ersten Soloprogramm voller Überzeugung
+      den Titel: „Das ist Kunst." Die Kunst zu leben? Die Kunst zu lieben? Die
+      Kunst zu schwadronieren? Was ist, wer ist, wo ist Kunst und warum
+      überhaupt? 
 
 
       Ansgar Hufnagel stellt die Welt auf den Kopf. Zielstrebig wie eine Zündschnur drückt der den roten Knopf. Damit kein Stein auf dem anderen bleibt – dabei bleibt nicht eingeschweißt. 
