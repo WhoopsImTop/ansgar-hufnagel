@@ -23,22 +23,22 @@
           class="nuxt-link"
           >{{ link.name }}</nuxt-link
         >
+        <div class="sticky-socials">
+          <a href="https://www.youtube.com/herrtausendsassa" target="_blank"
+            ><img src="/youtube_black.svg" alt="youtube"
+          /></a>
+          <a href="https://www.fb.com/herrtausendsassa" target="_blank"
+            ><img src="/facebook_black.svg" alt="facebook"
+          /></a>
+          <a href="https://www.instagram.com/herrtausendsassa" target="_blank"
+            ><img src="/instagram_black.svg" alt="instagram"
+          /></a>
+        </div>
       </div>
       <div class="mobile-cross" @click="toggleMobileNav">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
-      </div>
-      <div class="sticky-socials">
-        <a href="https://www.youtube.com/herrtausendsassa" target="_blank"
-          ><img src="/youtube.svg" alt="youtube"
-        /></a>
-        <a href="https://www.fb.com/herrtausendsassa" target="_blank"
-          ><img src="/facebook.svg" alt="facebook"
-        /></a>
-        <a href="https://www.instagram.com/herrtausendsassa" target="_blank"
-          ><img src="/instagram.svg" alt="instagram"
-        /></a>
       </div>
     </div>
   </div>
@@ -99,4 +99,30 @@ export default {
 </script>
 
 <style>
+.sticky-socials {
+  position: absolute;
+  bottom: -65px;
+  right: 0px;
+  display: block;
+  padding: 10px 15px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: var(--primary-color);
+}
+
+.sticky-socials img {
+  height: 25px;
+  margin: 0 5px;
+}
+
+@media(max-width: 1200px) {
+  .sticky-socials {
+    position: absolute;
+    background: none;
+    padding: unset;
+    bottom: 30px;
+    right: unset;
+  }
+}
+
 </style>

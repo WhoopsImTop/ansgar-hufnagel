@@ -39,7 +39,7 @@
                 <tr v-for="item in line_items" :key="item.id">
                   <td>{{ item.name }}</td>
                   <td>{{ item.quantity }} x</td>
-                  <td>{{ item.price.toFixed(2) }}€</td>
+                  <td>{{ item.reduction ? item.reduction.reduction_price.toFixed(2) : item.price.toFixed(2) }}€</td>
                 </tr>
               </tbody>
             </table>
@@ -187,12 +187,13 @@ export default {
       let product = this.produkte.find(
         (product) => product.id == item.id
       );
-      this.totalPrice += product.price * item.quantity;
+      this.totalPrice += (product.reduction ? product.reduction.reduction_price : product.price) * item.quantity;
       return {
         id: item.id,
         name: product.title,
         quantity: item.quantity,
         price: product.price,
+        reduction: product.reduction,
       };
     });
   },

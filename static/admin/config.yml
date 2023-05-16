@@ -161,4 +161,12 @@ collections:
       - { label: "Titel", name: "title", widget: "string", required: true }
       - { label: "Inhalt", name: "description", widget: "markdown", required: false }
       - { label: "Preis", name: "price", widget: "number", value_type: "float", required: true }
+      - label: "Angebot"
+        name: "reduction"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - { label: "Angebots Preis", name: "reduction_price", widget: "number", value_type: "float", required: false }
+          - { label: "Angebot endet am", name: "reduction_end", widget: "datetime", required: false }
       - { label: "Bild", name: "image", widget: "image", required: false }

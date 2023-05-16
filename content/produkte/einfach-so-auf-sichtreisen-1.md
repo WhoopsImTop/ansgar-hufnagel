@@ -21,5 +21,8 @@ description: >-
 
   Softcover, 1. Auflage 2019 | 128 Seiten
 price: 9.9
+reduction:
+  reduction_end: 2023-06-22T10:47:39.891Z
+  reduction_price: 7.99
 image: /img/image_4.jpeg
 ---

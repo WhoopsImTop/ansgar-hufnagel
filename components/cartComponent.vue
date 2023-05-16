@@ -6,7 +6,7 @@
         <div class="list-item" v-for="product in cartItems" :key="product.id">
           <img width="70px" :src="product.image" :alt="product.title" />
           <div class="cart-item-information">
-            <h5>{{ product.title }} | {{ product.price.toFixed(2) }}€</h5>
+            <h5>{{ product.title }} | {{ product.reduction ? product.reduction.reduction_price : product.price.toFixed(2) }}€</h5>
             <p>{{ product.quantity }} mal im Warenkorb</p>
             <div class="quantity-options">
               <button

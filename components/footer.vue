@@ -50,7 +50,7 @@
           <div class="col">
             <strong>Ansgar Hufnagel</strong>
             <div class="row">
-              <div class="col">
+              <div class="col" style="margin-top: 10px;">
                 <p>Valentinstraße 7</p>
                 <p>79100 Freiburg</p>
               </div>
@@ -68,7 +68,7 @@
               >
             </p>
           </div>
-          <div class="col">
+          <div class="col icon-row">
             <a href="https://www.youtube.com/herrtausendsassa" target="_blank"><img src="/youtube.svg" alt="youtube" /></a>
             <a href="https://www.fb.com/herrtausendsassa" target="_blank"><img src="/facebook.svg" alt="facebook" /></a>
             <a href="https://www.instagram.com/herrtausendsassa" target="_blank"><img src="/instagram.svg" alt="instagram" /></a>

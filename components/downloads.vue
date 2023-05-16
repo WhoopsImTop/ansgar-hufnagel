@@ -2,7 +2,7 @@
     <div class="downloadContainer">
         <div class="downloadContainer__content">
             <div class="downloadContainer__download" v-for="(download, index) in downloads" :key="index">
-                <a class="download-btn" :href="download.file"><img width="25px" src="img/download.svg"> {{ download.caption }}</a>
+                <a class="download-btn" :href="download.file"><img width="25px" src="/download.svg"> {{ download.caption }}</a>
             </div>
         </div>
     </div>

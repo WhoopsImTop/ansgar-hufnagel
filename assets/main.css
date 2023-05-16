@@ -51,6 +51,10 @@ span {
 }
 
 /* Header */
+.link-container {
+  position: relative;
+}
+
 .sticky_nav {
   position: sticky;
   top: 0px;
@@ -221,16 +225,13 @@ span {
 }
 
 .productGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 .product {
   display: flex;
-  flex-direction: column;
+  flex-direction: flex;
   background-color: #ffffff;
   padding: 10px 10px;
   position: relative;
@@ -240,6 +241,16 @@ span {
 
 .productImage img {
   width: 100%;
+}
+
+.productImage {
+  width: 100%;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.productInfo {
+  margin: 20px 0;
 }
 
 .productDescription {
@@ -282,11 +293,24 @@ span {
   margin-top: 70px;
 }
 
+.price-container {
+  margin: 20px 0;
+}
+
 .price {
-  margin-top: 15px;
   font-weight: 800;
   font-size: 25px;
-  margin-bottom: 10px;
+}
+
+.price.discounted {
+  text-decoration: line-through;
+  color: var(--dark-text);
+  font-weight: normal;
+}
+
+.reduction_price {
+  font-weight: 800;
+  font-size: 25px;
 }
 
 .cartIcon {
@@ -594,7 +618,8 @@ td {
   background-color: var(--primary-color);
   border: none;
   color: var(--light-dark);
-  padding: 10px 20px;
+  font-weight: bold;
+  padding: 15px 20px 15px 20px;
   font-size: 16px;
   text-decoration: none;
   cursor: pointer;
@@ -708,6 +733,10 @@ td {
   margin: 0 10px;
 }
 
+.footer a img {
+  height: 50px;
+}
+
 .footer .row {
   align-items: flex-end;
 }
@@ -809,7 +838,7 @@ td {
   display: none;
 }
 /* Mobile */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   :root {
     --landing-heading-text: 45px;
     --landing-heading-line-height: 45px;
@@ -945,7 +974,6 @@ td {
   }
 
   .termin .link {
-    position: unset;
     align-self: flex-start;
     margin-top: 20px;
   }
@@ -1116,5 +1144,16 @@ td {
   .checkout-button .product-btn {
     max-width: unset;
     width: unset;
+  }
+
+  .icon-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-row a {
+    margin-right: 10px;
   }
 }

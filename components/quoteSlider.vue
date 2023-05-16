@@ -50,6 +50,12 @@ export default {
       .where({ category: this.quoteCategory })
       .fetch();
     this.testimonials = testimonials;
+    
+    if (this.testimonials.length > this.slidesToShow) {
+      setInterval(() => {
+        this.nextSlide();
+      }, 5000);
+    }
   },
   mounted() {
     this.slideWidth = this.$refs.slider.offsetWidth / this.slidesToShow;
@@ -64,9 +70,10 @@ export default {
   },
   methods: {
     nextSlide() {
-      console.log("width: " + this.slideWidth);
       if (this.currentSlide < this.testimonials.length - this.slidesToShow) {
         this.currentSlide++;
+      } else {
+        this.currentSlide = 0;
       }
     },
     prevSlide() {
@@ -74,7 +81,7 @@ export default {
         this.currentSlide--;
       }
     },
-  },
+  }
 };
 </script>
   

@@ -7,8 +7,21 @@
       </div>
       <div class="product-text-container">
         <h1>{{ product[0].title }}</h1>
-        <p class="price">{{ product[0].price.toFixed(2) }}€</p>
-        <button class="product-btn" @click="addToCart(product[0])" :disabled="this.loading">{{ this.loading ? 'wird hinzugefügt' : 'in den Warenkorb' }}</button>
+        <div class="price-container">
+          <p class="price" :class="product[0].reduction ? 'discounted' : ''">
+            {{ product[0].price.toFixed(2) }}€
+          </p>
+          <p v-if="product[0].reduction" class="reduction_price">
+            {{ product[0].reduction.reduction_price.toFixed(2) }}€
+          </p>
+        </div>
+        <button
+          class="product-btn"
+          @click="addToCart(product[0])"
+          :disabled="this.loading"
+        >
+          {{ this.loading ? "wird hinzugefügt" : "in den Warenkorb" }}
+        </button>
         <p
           class="product-description"
           v-html="$md.render(product[0].description)"
