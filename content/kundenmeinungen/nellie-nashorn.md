@@ -1,5 +1,5 @@
 ---
-title: Nellie Nashorn (Lörrach)
+title: Nellie Nashorn, Lörrach
 image: /img/1223nellie.jpg
 category: Generell
 ---
