@@ -1,5 +1,5 @@
 ---
-title: Ratattouille - Die offene Bühne
+title: Ratattouille - Die offene Bühne - Moderation
 date: 2023-11-22T19:00:21.894Z
 ort: E-Werk, Freiburg
 location: '{"type":"Point","coordinates":[7.8334201,47.9940634]}'
