@@ -27,7 +27,15 @@ export default {
     const testimonials = await $content("kundenmeinungen")
       .where({ category: "Termine" })
       .fetch();
-    const termine = await $content("termine").fetch();
+    let termine = await $content("termine").fetch();
+    termine.sort((a, b) => {
+      return new Date(a.date) - new Date(b.date);
+    });
+    termine.forEach((termin, index) => {
+      if (new Date(termin.date) < new Date()) {
+        termine.splice(index, 1);
+      }
+    });
     return { page, testimonials, termine };
   },
   data() {

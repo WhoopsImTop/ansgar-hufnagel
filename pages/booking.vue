@@ -30,25 +30,6 @@ export default {
   },
   data() {
     return {
-      cards: [
-        {
-          cardImage: "moderation.png",
-          cardTitle: "Moderation",
-          cardText: "asdf",
-        },
-        {
-          cardImage: "moderation.png",
-          cardTitle: "Moderation",
-          cardText: "asdf",
-          cardActionBtnText: "asdf",
-          cardActionBtnLink: "/",
-        },
-        {
-          cardImage: "moderation.png",
-          cardTitle: "Moderation",
-          cardText: "asdf",
-        },
-      ],
     };
   },
 };
