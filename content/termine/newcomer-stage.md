@@ -1,5 +1,5 @@
 ---
-title: Newcomer Stage
+title: Newcomer Stage - Moderation
 date: 2023-06-22T18:00:50.773Z
 ort: Ebnet, Freiburg
 location: '{"type":"Point","coordinates":[7.9044472,47.9863293]}'
