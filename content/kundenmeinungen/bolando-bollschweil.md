@@ -1,5 +1,5 @@
 ---
-title: "Bolando, Bollschweil "
+title: "Bolando (Bollschweil) "
 company: Sandra Klein-Gißler, 1. Vorstand bolando-Kulturverein e.V.
 image: /img/4bl.jpg
 category: Poetry Slam
