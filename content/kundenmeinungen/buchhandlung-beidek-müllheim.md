@@ -1,5 +1,5 @@
 ---
-title: Buchhandlung Beidek, Müllheim
+title: Buchhandlung Beidek (Müllheim)
 company: "Antonia Schulze Hackenesch, Buchhandlung Beidek "
 image: /img/seedshirt-shop-bild-2.jpg
 category: Generell
