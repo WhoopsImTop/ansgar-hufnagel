@@ -1,5 +1,5 @@
 ---
-title: Comedy Flash
+title: Comedy Flash - Moderation
 date: 2023-06-16T18:00:31.222Z
 ort: Ebnet, Freiburg
 location: '{"type":"Point","coordinates":[7.9042228,47.9858573]}'
