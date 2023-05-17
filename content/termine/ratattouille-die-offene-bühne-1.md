@@ -5,7 +5,7 @@ ort: E-Werk, Freiburg
 location: '{"type":"Point","coordinates":[7.833414,47.9942216]}'
 zusatz: ""
 link: ""
-linktext: Eintritt frei, der Hut geht rum!
+linktext: ""
 alternativeDate:
   show: false
   alternativeDate: 2023-05-17T09:08:08.048Z
