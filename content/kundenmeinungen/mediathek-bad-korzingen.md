@@ -1,7 +1,7 @@
 ---
 title: Mediathek (Bad Krozingen)
 company: Rustam Mantyeyev, Leitung Mediathek Bad Krozingen
-image: /img/mediathek_bad_krozingen.png
+image: /img/12334mediathek.jpg
 category: Generell
 ---
 Ansgar Hufnagel ist ein Top Moderator und wunderbarer Künstler. Sehr professionell, 
