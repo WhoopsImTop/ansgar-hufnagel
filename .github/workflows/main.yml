@@ -29,5 +29,5 @@ jobs:
         username: 59095471.swh.strato-hosting.eu
         password: ${{ secrets.password }}
         local-dir: './dist/'
-        server-dir: 'ansgar-hufnagel'
+        server-dir: 'ansgar-hufnagel/'
         port: 21
