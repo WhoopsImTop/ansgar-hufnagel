@@ -1,5 +1,5 @@
 ---
-title: E-Werk Freiburg
+title: E-Werk, Freiburg
 company: Manuela Kowatsch, Programm & Vermietungen, E-Werk Freiburg
 image: /img/5ew.jpg
 category: Generell
