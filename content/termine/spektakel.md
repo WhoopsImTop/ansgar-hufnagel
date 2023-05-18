@@ -1,5 +1,5 @@
 ---
-title: "Spektakel "
+title: Spektakel - Moderation
 date: 2023-06-17T16:30:40.264Z
 ort: Art'Rhena, Breisach
 location: '{"type":"Point","coordinates":[7.5789094,48.0214334]}'
