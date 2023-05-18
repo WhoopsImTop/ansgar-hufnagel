@@ -1,6 +1,6 @@
 ---
-title: Kulturjoker
-company: Eich Krieger
+title: Kulturjoker, Kultur,- und Veranstaltungszeitung
+company: Eich Krieger, Redakteur Kulturjoker
 image: /img/14kj.jpg
 category: Kabarett
 ---
