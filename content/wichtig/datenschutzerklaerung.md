@@ -1,7 +1,7 @@
 ---
 title: Datenschutzerklaerung
 ---
-# DATENSCHUTZ
+### DATENSCHUTZ
 
 ## 1. Datenschutz auf einen Blick
 
