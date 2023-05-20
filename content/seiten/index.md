@@ -55,7 +55,7 @@ content:
           und der konkreten Performance eines Textes wird sich der Kunstform
           Poetry Slam mit seinen unterschiedlichen Facetten auf vielfältige
           Weise genähert. Beim Poetry Slam Workshop mit Ansgar Hufnagel geht es
-          darum, den eigenen Text Leben einzuhauchen.
+          darum, den eigenen Texten Leben einzuhauchen.
         image: /img/herrtausendsassa-instagram12.jpg
         linktext: JETZT BUCHEN
         link: /booking
