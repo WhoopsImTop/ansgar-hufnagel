@@ -1,8 +1,10 @@
 ---
 id: "02"
-title: '"Der Maulwurf"'
+title: '"Der Maulwurf" '
 description: >-
-  **Comicband mit Lyrik, Illustrationen und dem Maulwurf.**
+  **Comicband mit Lyrik, Illustrationen und dem Maulwurf.** \
+
+  **Hardcover!**
 
 
   Vom Bühnenduo Einfach so (Cäcilia Bosch & Ansgar Hufnagel)
@@ -27,6 +29,8 @@ description: >-
 
 
   ISBN: 3751999434 | 2. Auflage 2020 | 232 Seiten
-price: 11.9
+price: 19.9
+reduction:
+  reduction_end: 2023-05-20T11:44:33.484Z
 image: /img/image.jpeg
 ---
