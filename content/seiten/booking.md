@@ -22,14 +22,6 @@ content:
       * Poetry Slam,- und Kabarett "Duo Einfach so"
     highlight: false
     position: links
-  - title: Downloads
-    highlight: false
-    position: links
-    downloads:
-      - file: /img/pressetexte.pdf
-        caption: Pressetext
-      - file: /img/pressetexte.pdf
-        caption: Pressetext
   - instagram: false
     title: Wer ist dieser Ansgar Hufnagel ?
     body: "Wer bin ich?
@@ -58,4 +50,12 @@ content:
       Dann komm vorbei und mach dir selbst ein Bild. \vOb als Moderator,
       ungefährlichster Rapper der Welt, mit Kabarettprogramm oder als
       Workshop-Leiter, ich freue mich auf dich."
+  - title: Downloads
+    highlight: false
+    position: links
+    downloads:
+      - file: /img/pressetexte.pdf
+        caption: Pressetext
+      - file: /img/pressetexte.pdf
+        caption: Pressetext
 ---
