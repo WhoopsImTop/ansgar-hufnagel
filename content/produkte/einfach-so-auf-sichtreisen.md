@@ -19,5 +19,8 @@ description: >-
 
   © Tinx | Audio-CD, 2018
 price: 9.95
+reduction:
+  reduction_end: 2023-12-31T12:46:05.039Z
+  reduction_price: 5
 image: /img/image_3.jpeg
 ---
