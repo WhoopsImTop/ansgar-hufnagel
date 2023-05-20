@@ -6,7 +6,8 @@ landing:
   landingImage: /img/9.jpg
 content:
   - title: Buchen Sie mich
-    body: "Sie können Ansgar Hufnagel für Events, Jahresfeste, Firmenfeiern,
+    body: >-
+      Sie können Ansgar Hufnagel für Events, Jahresfeste, Firmenfeiern,
       Hochzeiten, Geburtstage und alle möglichen anderen Veranstaltungen buchen.
       Auf dieser Seite finden Sie einen Überblick über seine künstlerischen
       Tätigkeiten.
@@ -14,20 +15,24 @@ content:
 
       * Moderation
 
-      * Kabarett (aktuelles Programm: \"Das ist Kunst\") - Poetry,
-      Kabarett, Rap Chansons
+      * Kabarett (aktuelles Programm: "Das ist Kunst") - Poetry, Kabarett, Rap Chansons
 
       * Tausendsassa: der ungefährlichste Rapper der Welt
 
-      * Poetry Slam,- und Kabarettduo \"Einfach so\"
-
-
-
-
-      #### **Wer ist dieser Ansgar Hufnagel?**
-
-
-      Wer bin ich?
+      * Poetry Slam,- und Kabarett "Duo Einfach so"
+    highlight: false
+    position: links
+  - title: Downloads
+    highlight: false
+    position: links
+    downloads:
+      - file: /img/pressetexte.pdf
+        caption: Pressetext
+      - file: /img/pressetexte.pdf
+        caption: Pressetext
+  - instagram: false
+    title: Wer ist dieser Ansgar Hufnagel ?
+    body: "Wer bin ich?
 
       Unzweifelbar - ein Bühnenmensch!
 
@@ -53,14 +58,4 @@ content:
       Dann komm vorbei und mach dir selbst ein Bild. \vOb als Moderator,
       ungefährlichster Rapper der Welt, mit Kabarettprogramm oder als
       Workshop-Leiter, ich freue mich auf dich."
-    highlight: false
-    position: links
-  - title: Downloads
-    highlight: false
-    position: links
-    downloads:
-      - file: /img/pressetexte.pdf
-        caption: Pressetext
-      - file: /img/pressetexte.pdf
-        caption: Pressetext
 ---
