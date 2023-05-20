@@ -38,14 +38,16 @@ content:
       Veranstaltungskontexten und wenn ich die Bühnenbretter unter meinen Füßen
       spüre, weiß ich, dass ich genau zur richtigen Zeit am richtigen Ort bin.
 
-      Zuhause. Die Show kann beginnen. \v
+      Zuhause. Die Show kann beginnen.\ 
 
       Ich habe mich der Kunst auf Lebenszeit verschrieben und möchte
       inspirieren, zum Nachdenken anregen, ein Schmunzeln ins Gesicht zaubern
       und hin und wieder auch einfach mal die Sau rauslassen. Ja, ich bin eine
       Rampensau mit Speer im Handgepäck und ich stehe dazu!
 
-      \vDu möchtest mehr erfahren?\ 
+
+
+      Du möchtest mehr erfahren?\ 
 
       Dann komm vorbei und mach dir selbst ein Bild. \vOb als Moderator,
       ungefährlichster Rapper der Welt, mit Kabarettprogramm oder als
