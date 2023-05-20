@@ -52,6 +52,7 @@ content:
       Dann komm vorbei und mach dir selbst ein Bild. \vOb als Moderator,
       ungefährlichster Rapper der Welt, mit Kabarettprogramm oder als
       Workshop-Leiter, ich freue mich auf dich."
+    position: links
   - title: Downloads
     highlight: false
     position: links
