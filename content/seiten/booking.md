@@ -64,7 +64,8 @@ content:
     position: links
     downloads:
       - file: /img/pressetexte.pdf
-        caption: Pressetext
+        caption: 'Pressetext: "Das ist Kunst"'
       - file: /img/pressetexte.pdf
-        caption: Pressetext
+        caption: Pressetext Poetry Slam
+      - {}
 ---
