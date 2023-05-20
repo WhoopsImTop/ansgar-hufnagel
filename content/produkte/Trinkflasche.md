@@ -2,9 +2,7 @@
 id: "02"
 title: '"Der Maulwurf" '
 description: >-
-  **Comicband mit Lyrik, Illustrationen und dem Maulwurf.** \
-
-  **Hardcover!**
+  **Comicband mit Lyrik, Illustrationen und dem Maulwurf.** (Hardcover)
 
 
   Vom Bühnenduo Einfach so (Cäcilia Bosch & Ansgar Hufnagel)
