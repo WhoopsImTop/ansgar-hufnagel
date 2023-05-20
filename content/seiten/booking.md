@@ -19,7 +19,13 @@ content:
 
       * Tausendsassa: der ungefährlichste Rapper der Welt
 
-      * Poetry Slam,- und Kabarett "Duo Einfach so"
+      * Poetry Slam Team: "Duo Einfach so"!
+
+      * Slam Poet Solo 
+
+      * Workshopleiter (Poetry Slam und Rap)
+
+      * Auftragstexte (für Feiern, Hochzeiten, Geburtstage oder zu bestimmten Themen)
     highlight: false
     position: links
   - instagram: false
