@@ -23,23 +23,16 @@ content:
     position: links
     cards: []
     body: >-
-      Mit Fernglas und mit Lupe blickt Ansgar Hufnagel auf die Unmöglichkeiten
-      und das Banale in uns und um uns und um uns herum. Dabei nimmt er kein
-      Blatt vor den Mund und gibt seinem ersten Soloprogramm voller Überzeugung
-      den Titel: „Das ist Kunst." Die Kunst zu leben? Die Kunst zu lieben? Die
-      Kunst zu schwadronieren? Was ist, wer ist, wo ist Kunst und warum
-      überhaupt? 
+      „Das ist Kunst“ - damit das auch klar ist, wird mit dem Titel jeder
+      Diskussion darüber schon im Vorhinein der Wind aus den Segeln genommen.
 
 
-      Ansgar Hufnagel stellt die Welt auf den Kopf. Zielstrebig wie eine Zündschnur drückt der den roten Knopf. Damit kein Stein auf dem anderen bleibt – dabei bleibt nicht eingeschweißt. 
+      Denn um den kümmert sich Ansgar Hufnagel schon selbst – mit pointierter Selbstironie, messerscharf geschliffener Lyrik und flockigen Anekdoten im Plauderton blickt er auf die Kunst, sich als Künstler und das Leben als solcher in all seinen Facetten. Eine lebendige Reise durch die Biografie eines Tausendsassas und seinen kreativen Ausdrucksweisen – Lyrik und Prosa treffen auf Rap und Slam, Dichter und Denker auf Plaudertasche und Lebemann, Realität und Fakten auf Fiktion und Träumerei.
 
 
-      Poetry Kabarett heißt Wortwitz und Reime, heißt eintauchen, abtauchen und das nicht alleine. \
+      Ein lebendiger Abend, bei dem kein Stein auf dem anderen, aber am Ende immerhin diese eine Gewissheit bleibt – DASist Kunst.\
 
-      Das ist Kunst. Unterhaltsam. Konkret. Absurd. Mit Liebe für’s Detail!\
-
-      Überzeug dich selbst und komm vorbei.
-
+      \
 
       Poetry / Kabarett / Rap Chanson / Lesung
     image: /img/foto-was-ist-kabarett.jpg
