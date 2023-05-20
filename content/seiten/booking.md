@@ -19,11 +19,10 @@ content:
 
       * Tausendsassa: der ungefährlichste Rapper der Welt
 
-      * Poetry Slam,- und Kabarettduo \"Einfach so\"\\
+      * Poetry Slam,- und Kabarettduo \"Einfach so\"
 
-      \  \\
 
-      \  **Wer ist dieser Ansgar Hufnagel?**
+      **Wer ist dieser Ansgar Hufnagel?**
 
 
       Wer bin ich?
