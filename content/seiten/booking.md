@@ -67,5 +67,6 @@ content:
         caption: '"Das ist Kunst" - Pressetext'
       - file: /img/pressetexte.pdf
         caption: Poetry Slam - Pressetext
-      - {}
+      - caption: Ansgar Hufnagel - Pressetext
+      - caption: Tausendsassa - Pressetext
 ---
