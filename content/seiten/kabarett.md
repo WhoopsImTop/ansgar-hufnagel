@@ -18,7 +18,7 @@ content:
     highlight: false
     image: ""
     position: mitte
-  - title: "Aktuelles Programm: Das ist Kunst"
+  - title: "Aktuelles Programm:    Das ist Kunst"
     highlight: true
     position: links
     cards: []
