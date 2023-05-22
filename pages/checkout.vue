@@ -219,6 +219,9 @@ export default {
   },
   mounted() {
     let cartItems = JSON.parse(localStorage.getItem("cartItems"));
+    if(!cartItems) {
+      window.location.href = "/shop";
+    }
     //get cartItems id and quantity and search id in products
     this.line_items = cartItems.map((item) => {
       let product = this.produkte.find((product) => product.id == item.id);
