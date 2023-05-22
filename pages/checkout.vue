@@ -194,12 +194,13 @@ export default {
         axios
           .request(config)
           .then((response) => {
-            console.log(response);
+            console.log(response.data.url);
             window.location.href = response.data.url;
             this.loading = false;
           })
           .catch((error) => {
             console.log(error);
+            window.alert("Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.");
             this.loading = false;
           });
       } else {
