@@ -187,7 +187,7 @@ export default {
         let config = {
           method: "post",
           maxBodyLength: Infinity,
-          url: "http://ansgar-hufnagel.de/api/checkout",
+          url: "https://ansgar-hufnagel.de/api/checkout",
           data: data,
         };
 
