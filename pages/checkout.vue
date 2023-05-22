@@ -75,9 +75,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    zzgl. Versandkosten
-                  </td>
+                  <td>zzgl. Versandkosten</td>
                   <td></td>
                   <td>
                     <strong>{{ shippingCosts.toFixed(2) }}€</strong>
@@ -178,38 +176,32 @@ export default {
       }
     },
     generateCheckout() {
-      console.log(this.line_items);
       if (this.validateCheckout()) {
         this.loading = true;
 
-        let data = JSON.stringify({
-          name: this.name,
-          last_name: this.last_name,
-          email: this.email,
-          phone: this.phone,
-          street: this.address,
-          city: this.city,
-          state: this.state,
-          zip: this.zip,
-          country: this.country,
-          lineItems: this.line_items,
-          total: this.totalPrice,
-          payment_method: this.paymentMethod,
-        });
-
-        let config = {
-          method: "post",
-          maxBodyLength: Infinity,
-          url: "https://ansgar-hufnagel.de/api/checkout",
-          data: data,
-        };
-
         axios
-          .request(config)
+          .post("https://ansgar-hufnagel.de/api/checkout", {
+            name: this.name,
+            last_name: this.last_name,
+            email: this.email,
+            phone: this.phone,
+            address: this.address,
+            city: this.city,
+            state: this.state,
+            zip: this.zip,
+            country: this.country,
+            line_items: this.line_items,
+            paymentMethod: this.paymentMethod,
+          })
           .then((response) => {
-            console.log(response.data.url);
-            localStorage.removeItem("cartItems");
-            window.location.href = response.data.url;
+            if (response.data.url) {
+              localStorage.removeItem("cartItems");
+              window.location.href = response.data.url;
+            } else {
+              window.alert(
+                "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+              );
+            }
             this.loading = false;
           })
           .catch((error) => {
