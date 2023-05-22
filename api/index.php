@@ -42,18 +42,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/api/c
     //create customer object
     try {
         $customer = new customer($json['name'], $json['last_name'], $json['email'], $json['phone'], $json['street'], $json['city'], $json['zip'], $json['state'], $json['country'], $json['lineItems'], $json['total'], $json['payment_method']);
-    } catch (Exception $e) {
-        echo json_encode(array('error' => $e->getMessage()));
-        die();
-    }
-    $mail = new mail($json['name'], $json['last_name'], $json['email'], $json['phone'], $json['street'], $json['city'], $json['zip'], $json['state'], $json['country'], $json['lineItems'], $json['total'], $json['payment_method']);
-    $mail->sendConfirmationMail();
-    //create customer in database
-    $customer->create();
-    //return customer id
+        $mail = new mail($json['name'], $json['last_name'], $json['email'], $json['phone'], $json['street'], $json['city'], $json['zip'], $json['state'], $json['country'], $json['lineItems'], $json['total'], $json['payment_method']);
+        $mail->sendConfirmationMail();
+        //create customer in database
+        $customer->create();
+        //return customer id
 
-    if ($customer->payment_method == "PayPal") {
-        /* 
+        if ($customer->payment_method == "PayPal") {
+            /* 
         $lineItems = $customer->lineItems;
 
         $products = json_decode($lineItems, true);
@@ -103,11 +99,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/api/c
             $querystring .= "&item_name_$icount=$item_name&amount_$icount=$item_price&quantity_$icount=$item_qty";
         }
         /* $querystring .= '&item_count=' . count($products) . '&amount=' . $total; */
-        //return json response with url key
-        //echo json_encode(array('url' => $paypal_url . $querystring));
-        echo json_encode(array('url' => 'https://ansgar-hufnagel.de/payment_success?cid=' . $customer->id . '&payment_method=' . $customer->payment_method));
-    } else {
-        echo json_encode(array('url' => 'https://ansgar-hufnagel.de/payment_success?cid=' . $customer->id . '&payment_method=' . $customer->payment_method));
+            //return json response with url key
+            //echo json_encode(array('url' => $paypal_url . $querystring));
+            echo json_encode(array('url' => 'https://ansgar-hufnagel.de/payment_success?cid=' . $customer->id . '&payment_method=' . $customer->payment_method));
+        } else {
+            echo json_encode(array('url' => 'https://ansgar-hufnagel.de/payment_success?cid=' . $customer->id . '&payment_method=' . $customer->payment_method));
+        }
+    } catch (Exception $e) {
+        echo json_encode(array('error' => $e->getMessage()));
+        exit();
     }
 } else if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/api/approve_payment') {
     //get post body
