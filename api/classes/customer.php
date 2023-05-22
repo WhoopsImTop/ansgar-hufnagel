@@ -105,7 +105,7 @@ class customer
     {
         try {
             $db = new DB();
-            $db->query("INSERT INTO customers (id, order_id, name, last_name, email, phone, payment_method, payment_transaction_id, paypal_payer_id, payment_date, lineItems, total) VALUES (:id, :order_id, :name, :last_name, :email, :phone, :payment_method, :payment_transaction_id, :paypal_payer_id, :payment_date, :lineItems, :total)");
+            $db->query("INSERT INTO customers (id, order_id, name, last_name, email, phone, street, city, zip, state, country, payment_method, payment_transaction_id, paypal_payer_id, payment_date, lineItems, total) VALUES (:id, :order_id, :name, :last_name, :email, :phone, :street, :city, :zip, :state, :country, :payment_method, :payment_transaction_id, :paypal_payer_id, :payment_date, :lineItems, :total)");
             $db->bind(":id", $this->id);
             $db->bind(":order_id", $this->order_id);
             $db->bind(":name", $this->name);
@@ -139,7 +139,7 @@ class customer
     public function update()
     {
         $db = new DB();
-        $db->query("UPDATE customers SET name = :name, last_name = :last_name, email = :email, phone = :phone, payment_method = :payment_method, payment_transaction_id = :payment_transaction_id, paypal_payer_id = :paypal_payer_id, payment_date = :payment_date, lineItems = :lineItems, total = :total WHERE id = :id");
+        $db->query("UPDATE customers SET name = :name, last_name = :last_name, email = :email, phone = :phone, , street = :street, city = :city, zip = :zip, state = :state, country = :country, payment_method = :payment_method, payment_transaction_id = :payment_transaction_id, paypal_payer_id = :paypal_payer_id, payment_date = :payment_date, lineItems = :lineItems, total = :total WHERE id = :id");
         $db->bind(":id", $this->id);
         $db->bind(":name", $this->name);
         $db->bind(":last_name", $this->last_name);
