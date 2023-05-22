@@ -9,7 +9,7 @@
         >
           <div class="testimonial">
             <div class="testimonial-image">
-              <img :src="testimonial.image" :alt="testimonial.name" />
+              <img :src="testimonial.image" :alt="testimonial.title" />
             </div>
             <div class="testimonial-text">
               <nuxt-content :document="testimonial"></nuxt-content>

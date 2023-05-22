@@ -47,7 +47,9 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    '@nuxtjs/robots',
+    'nuxt-compress'
   ],
 
   markdownit: {
@@ -58,6 +60,15 @@ export default {
       'markdown-it-div',
       'markdown-it-attrs'
     ]
+  },
+
+  'nuxt-compress': {
+    gzip: {
+      threshold: 8192,
+    },
+    brotli: {
+      threshold: 8192,
+    },
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
