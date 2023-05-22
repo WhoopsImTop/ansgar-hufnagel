@@ -226,9 +226,9 @@ export default {
     this.line_items = cartItems.map((item) => {
       let product = this.produkte.find((product) => product.id == item.id);
       this.totalPrice +=
-        (product.reduction
+        ((product.reduction
           ? product.reduction.reduction_price
-          : product.price) * item.quantity;
+          : product.price) * item.quantity) + this.shippingCosts;
       return {
         id: item.id,
         name: product.title,
