@@ -188,9 +188,6 @@ export default {
           method: "post",
           maxBodyLength: Infinity,
           url: "http://ansgar-hufnagel.de/api/checkout",
-          headers: {
-            "Content-Type": "application/json",
-          },
           data: data,
         };
 
