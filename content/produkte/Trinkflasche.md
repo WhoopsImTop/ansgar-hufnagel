@@ -28,7 +28,5 @@ description: >-
 
   ISBN: 3751999434 | 2. Auflage 2020 | 232 Seiten
 price: 19.9
-reduction:
-  reduction_end: 2023-05-20T11:44:33.484Z
 image: /img/image.jpeg
 ---

@@ -28,6 +28,7 @@ export default {
     display: inline-flex;
     align-items: center;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .downloadContainer__content {

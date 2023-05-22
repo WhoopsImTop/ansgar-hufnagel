@@ -1,6 +1,6 @@
 <template>
   <div :class="classesToAppend">
-    <div class="content-container text-container">
+    <div class="content-container text-container" :style="noPadding ? 'padding-top: 0px;' : ''">
       <h3>{{ title }}</h3>
       <slot name="content"></slot>
     </div>
@@ -18,6 +18,10 @@ export default {
       default: null,
     },
     highlighted: {
+      type: Boolean,
+      default: false,
+    },
+    noPadding: {
       type: Boolean,
       default: false,
     },

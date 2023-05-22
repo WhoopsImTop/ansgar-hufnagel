@@ -8,7 +8,7 @@
         <div class="col newsletter">
           <h3>Newsletter Abonnieren</h3>
           <p>
-            Seien Sie immer auf dem Neusten stand über Termine, Aktionen uvm.
+            Seien Sie immer auf dem neuesten Stand über Termine, Aktionen uvm.
           </p>
           <div id="mc_embed_signup">
             <form
@@ -31,10 +31,15 @@
                 >
                   <div
                     class="mc-field-group"
-                    style="width: 65%; display: flex; flex-direction: column; margin-right: 10px;"
+                    style="
+                      width: 65%;
+                      display: flex;
+                      flex-direction: column;
+                      margin-right: 10px;
+                    "
                   >
                     <input
-                      style="width: 100%;"
+                      style="width: 100%"
                       type="email"
                       value=""
                       placeholder="E-Mail Adresse"
@@ -170,10 +175,10 @@
             </p>
           </div>
           <div class="col icon-row">
-            <a href="https://www.youtube.com/herrtausendsassa" target="_blank"
+            <a href="https://www.youtube.com/@herrtausendsassa" target="_blank"
               ><img src="/youtube.svg" alt="youtube"
             /></a>
-            <a href="https://www.fb.com/herrtausendsassa" target="_blank"
+            <a href="https://www.facebook.com/Ansage.Hufnagel/" target="_blank"
               ><img src="/facebook.svg" alt="facebook"
             /></a>
             <a href="https://www.instagram.com/herrtausendsassa" target="_blank"

@@ -24,10 +24,10 @@
           >{{ link.name }}</nuxt-link
         >
         <div class="sticky-socials">
-          <a href="https://www.youtube.com/herrtausendsassa" target="_blank"
+          <a href="https://www.youtube.com/@herrtausendsassa" target="_blank"
             ><img src="/youtube_black.svg" alt="youtube"
           /></a>
-          <a href="https://www.fb.com/herrtausendsassa" target="_blank"
+          <a href="https://www.facebook.com/Ansage.Hufnagel/" target="_blank"
             ><img src="/facebook_black.svg" alt="facebook"
           /></a>
           <a href="https://www.instagram.com/herrtausendsassa" target="_blank"

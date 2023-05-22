@@ -17,8 +17,8 @@
           v-html="productShortDescription(product)"
         ></div>
         <div class="price-container">
-          <p class="price" :class="product.reduction ? 'discounted' : ''">{{ product.price.toFixed(2) }}€</p>
-          <p v-if="product.reduction" class="reduction_price">{{ product.reduction.reduction_price.toFixed(2) }}€</p>
+          <p class="price" :class="product.reduction ? 'discounted' : ''">{{ parseFloat(product.price).toFixed(2) }}€</p>
+          <p v-if="product.reduction" class="reduction_price">{{ parseFloat(product.reduction.reduction_price).toFixed(2) }}€</p>
         </div>
       </div>
     </nuxt-link>

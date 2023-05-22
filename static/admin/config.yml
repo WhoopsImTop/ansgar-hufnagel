@@ -48,6 +48,7 @@ collections:
           - { label: "Inhalt", name: "body", widget: "markdown", required: false }
           - { label: "Bild", name: "image", widget: "image", required: false }
           - { label: "Inhaltspositionierung", name: "position", widget: "select", options: ["links", "mitte", "rechts"], required: false }
+          - { label: "Kleinerer Abstand nach oben?", name: "noPaddingTop", widget: "boolean", required: false, default: false }
           - { label: "Hervorgehoben ?", name: "highlight", widget: "boolean", required: false }
           - label: "Karten"
             name: "cards"
@@ -98,7 +99,7 @@ collections:
             required: false
             collapsed: true
             fields:
-              - { label: "Datei", name: "file", widget: "file", required: false }
+              - { label: "Datei", name: "file", widget: "file", multiple: true, required: false }
               - { label: "Datei Untertitel", name: "caption", widget: "string", required: false }
           - label: "Instagram"
             name: "instagram"

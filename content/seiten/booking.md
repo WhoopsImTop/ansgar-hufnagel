@@ -29,6 +29,7 @@ content:
     highlight: false
     position: links
   - instagram: false
+    noPadding: true
     title: Wer ist dieser Ansgar Hufnagel ?
     body: "Wer bin ich?
 

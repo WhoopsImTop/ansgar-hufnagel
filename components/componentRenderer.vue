@@ -3,6 +3,7 @@
     <sectionContainer
       :highlighted="component.highlight"
       :image="component.image"
+      :noPadding="component.noPadding"
     >
       <template v-slot:content>
         <textComponent
