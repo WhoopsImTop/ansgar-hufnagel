@@ -139,7 +139,7 @@ class customer
     public function update()
     {
         $db = new DB();
-        $db->query("UPDATE customers SET name = :name, last_name = :last_name, email = :email, phone = :phone, , street = :street, city = :city, zip = :zip, state = :state, country = :country, payment_method = :payment_method, payment_transaction_id = :payment_transaction_id, paypal_payer_id = :paypal_payer_id, payment_date = :payment_date, lineItems = :lineItems, total = :total WHERE id = :id");
+        $db->query("UPDATE customers SET name = :name, last_name = :last_name, email = :email, phone = :phone, street = :street, city = :city, zip = :zip, state = :state, country = :country, payment_method = :payment_method, payment_transaction_id = :payment_transaction_id, paypal_payer_id = :paypal_payer_id, payment_date = :payment_date, lineItems = :lineItems, total = :total WHERE id = :id");
         $db->bind(":id", $this->id);
         $db->bind(":name", $this->name);
         $db->bind(":last_name", $this->last_name);

@@ -100,7 +100,7 @@ class mail extends customer
         $info .= '<table border="0" cellpadding="0" cellspacing="0" style="background-color:#f8f8f8; width:775px; max-width:90%; margin:0 auto;" >';
 
         $info .= '<tr><td style="padding: 20px 0px 20px 0px;">';
-        $info .= '<img style="width: 250px" src="https://www.ansgar-hufnagel.de/logo.png" />';
+        $info .= '<img style="width: 50px" src="https://www.ansgar-hufnagel.de/logo.png" />';
         $info .= '</td></tr>';
 
         $info .= '<tr><td style="padding: 30px 30px 30px 30px; background-color:#FFFFFF; text-align:left; font-size:14px; color:#000000;">';
