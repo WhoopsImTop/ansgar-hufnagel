@@ -128,6 +128,18 @@
 <script>
 import axios from "axios";
 export default {
+  head() {
+    return {
+      title: "Ansgar Hufnagel | Kasse",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Kasse",
+        },
+      ],
+    };
+  },
   async asyncData({ $content, params }) {
     const produkte = await $content("produkte").fetch();
     return { produkte };

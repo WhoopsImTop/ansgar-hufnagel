@@ -3,7 +3,7 @@ title: Poetry Slam
 landing:
   landingTitle: Poetry Slam
   landingSubtitle: MODERATION. POETRY SLAM. KABARETT. WORKSHOPS.
-  landingImage: /img/poetry_slam.png
+  landingImage: /img/poetry_slam.webp
 content:
   - title: Poetry Slam
     body: Diese Grenzenlosigkeit ist wohl mit einer der Erfolgsgaranten dieses
