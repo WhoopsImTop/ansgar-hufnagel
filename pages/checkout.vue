@@ -191,6 +191,7 @@ export default {
             zip: this.zip,
             country: this.country,
             line_items: this.line_items,
+            total: this.totalPrice,
             paymentMethod: this.paymentMethod,
           })
           .then((response) => {
