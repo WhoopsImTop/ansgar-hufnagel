@@ -8,7 +8,7 @@
       :id="product.id"
     >
       <div class="productImage">
-        <img :src="product.image" alt="product image" />
+        <img :src="product.image" :alt="product.title" />
       </div>
       <div class="productInfo">
         <h4>{{ product.title }}</h4>

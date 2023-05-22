@@ -20,7 +20,7 @@
           {
             hid: 'description',
             name: 'description',
-            content: this.page.description,
+            content: "Alle Downloads von Ansgar Hufnagel",
           },
           {
             hid: 'og:title',

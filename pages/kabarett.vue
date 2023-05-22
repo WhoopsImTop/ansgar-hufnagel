@@ -20,7 +20,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.page.description,
+          content: this.page.landing.landingSubtitle,
         },
         {
           hid: 'og:title',

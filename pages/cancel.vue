@@ -16,7 +16,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: this.page.description,
+          content: "Bestellung abgebrochen",
         },
         {
           hid: "og:title",
