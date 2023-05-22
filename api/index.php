@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/api/c
         echo json_encode(array('error' => $e->getMessage()));
         die();
     }
-    $mail = new mail($json['name'], $json['last_name'], $json['email'], $json['phone'], $json['street'], $json['city'], $json['zip'], $json['state'], $json['lineItems'], $json['total'], $json['payment_method']);
+    $mail = new mail($json['name'], $json['last_name'], $json['email'], $json['phone'], $json['street'], $json['city'], $json['zip'], $json['state'], $json['country'], $json['lineItems'], $json['total'], $json['payment_method']);
     $mail->sendConfirmationMail();
     //create customer in database
     $customer->create();
