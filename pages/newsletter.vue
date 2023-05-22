@@ -1,20 +1,6 @@
 <template>
   <div class="content-container text-container">
     <h3>Newsletteranmeldung</h3>
-    <!-- Begin Mailchimp Signup Form -->
-    <link
-      href="//cdn-images.mailchimp.com/embedcode/classic-071822.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <style type="text/css">
-      #mc_embed_signup {
-        background: #fff;
-        clear: left;
-      }
-      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
     <div id="mc_embed_signup">
       <form
         action="https://der-tausendsassa.us5.list-manage.com/subscribe/post?u=5556273accb27fdfdd313741f&amp;id=4a73f60096&amp;f_id=00840febf0"
@@ -154,4 +140,38 @@ export default {};
 </script>
 
 <style>
+.mc-field-group {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.mc-field-group label {
+    margin-bottom: 5px;
+}
+
+.mc-field-group input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+
+.mc-field-group input:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+#mc-embedded-subscribe {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.clear.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 </style>
