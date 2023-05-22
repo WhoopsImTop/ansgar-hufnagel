@@ -71,6 +71,60 @@ class mail extends customer
             //write to log File
             $this->writeLog('Mail sent to: ' . $this->email);
         }
+
+        //notify admin
+        $mail->clearAddresses();
+        $mail->addAddress(NOTIFICATION_EMAIL, MAIL_FROM);
+        $mail->Subject = 'Neue Bestellung bei Ansgar Hufnagel';
+        $message = '<p style="color: #000000; font-size: 14px;">Hallo,<br>';
+        $message .= 'es wurde eine neue Bestellung aufgegeben:<br>';
+        $message .= '<table style="width: 100%; border: 1px solid #000000; border-collapse: collapse; margin-top: 20px;">';
+        $message .= '<tr style="border: 1px solid #000000; border-collapse: collapse;">';
+        $message .= '<th style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">Produkt</th>';
+        $message .= '<th style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">Anzahl</th>';
+        $message .= '<th style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">Preis</th>';
+        $message .= '</tr>';
+        //parse line items and add to message
+        $lineItems = json_decode($this->lineItems, true);
+        foreach ($lineItems as $lineItem) {
+            $message .= '<tr style="border: 1px solid #000000; border-collapse: collapse;">';
+            $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['name'] . '</td>';
+            $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['quantity'] . '</td>';
+            if ($lineItem['reduction']['reduction_price']) {
+                $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['reduction']['reduction_price'] . '€</td>';
+            } else {
+                $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['price'] . '€</td>';
+            }
+            $message .= '</tr>';
+        }
+        $message .= '</table>';
+        $message .= '<br>';
+        $message .= 'Gesamtpreis: ' . $this->total . '€<br>';
+        $message .= '<br>';
+        $message .= 'Kundeninformationen:<br>';
+        $message .= 'Name: ' . $this->name . '<br>';
+        $message .= 'E-Mail: ' . $this->email . '<br>';
+        $message .= 'Telefon: ' . $this->phone . '<br>';
+        $message .= 'Adresse: ' . $this->street . '<br>';
+        $message .= 'PLZ: ' . $this->zip . '<br>';
+        $message .= 'Stadt: ' . $this->city . '<br>';
+        $message .= 'Land: ' . $this->country . '<br>';
+        $message .= '<br><br>';
+        $message .= 'Bitte sende dem Kunden zeitnah eine Rechnung zu.</p>';
+        $template = $this->mycomp_email_filter($message);
+
+        $mail->Body = $template['message'];
+        $mail->AltBody = $template['message'];
+
+        //send mail in php
+        if (!$mail->send()) {
+            //write to log File
+            $this->writeLog('Mail Error: ' . $mail->ErrorInfo . ' ' . $this->email);
+        } else {
+            //write to log File
+            $this->writeLog('Mail sent to: ' . $this->email);
+        }
+
     }
 
 

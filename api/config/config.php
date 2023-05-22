@@ -32,3 +32,4 @@ define('SMTP_USER', 'shop@ansgar-hufnagel.de');
 define('SMTP_PASSWORD', 'khri8gr4f1k2');
 define('MAIL_FROM', 'Ansgar Hufnagel');
 define('MAIL_FROM_EMAIL', 'shop@ansgar-hufnagel.de');
+define('NOTIFICATION_EMAIL', 'eliasenglen2@gmail.com');

@@ -74,10 +74,21 @@
                     }}€
                   </td>
                 </tr>
+                <tr>
+                  <td>
+                    zzgl. Versandkosten
+                  </td>
+                  <td></td>
+                  <td>
+                    <strong>{{ shippingCosts.toFixed(2) }}€</strong>
+                  </td>
+                </tr>
               </tbody>
             </table>
             <div class="total-price">
-              <strong>Gesamt: {{ totalPrice.toFixed(2) }}€</strong>
+              <strong
+                >Gesamt: {{ (totalPrice + shippingCosts).toFixed(2) }}€</strong
+              >
             </div>
           </div>
           <div class="checkout-options">
@@ -144,6 +155,7 @@ export default {
       totalPrice: 0,
       paymentMethod: null,
       loading: false,
+      shippingCosts: 2.99,
     };
   },
   methods: {
@@ -166,7 +178,7 @@ export default {
       }
     },
     generateCheckout() {
-        console.log(this.line_items);
+      console.log(this.line_items);
       if (this.validateCheckout()) {
         this.loading = true;
 
@@ -195,12 +207,15 @@ export default {
           .request(config)
           .then((response) => {
             console.log(response.data.url);
+            localStorage.removeItem("cartItems");
             window.location.href = response.data.url;
             this.loading = false;
           })
           .catch((error) => {
             console.log(error);
-            window.alert("Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.");
+            window.alert(
+              "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+            );
             this.loading = false;
           });
       } else {
