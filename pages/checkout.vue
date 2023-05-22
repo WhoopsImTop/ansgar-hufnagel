@@ -185,7 +185,7 @@ export default {
             last_name: this.last_name,
             email: this.email,
             phone: this.phone,
-            address: this.address,
+            street: this.address,
             city: this.city,
             state: this.state,
             zip: this.zip,
