@@ -44,8 +44,8 @@ class mail extends customer
             $message .= '<tr style="border: 1px solid #000000; border-collapse: collapse;">';
             $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['name'] . '</td>';
             $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['quantity'] . '</td>';
-            if ($lineItem['reduction']->reduction_price) {
-                $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['reduction']->reduction_price . '€</td>';
+            if ($lineItem['reduction']['reduction_price']) {
+                $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['reduction']['reduction_price'] . '€</td>';
             } else {
                 $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['price'] . '€</td>';
             }
