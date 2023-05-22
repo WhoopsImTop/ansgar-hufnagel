@@ -194,6 +194,7 @@ export default {
           country: this.country,
           lineItems: this.line_items,
           total: this.totalPrice,
+          payment_method: this.paymentMethod,
         });
 
         let config = {
