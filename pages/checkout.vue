@@ -190,7 +190,7 @@ export default {
             state: this.state,
             zip: this.zip,
             country: this.country,
-            line_items: this.line_items,
+            lineItems: this.line_items,
             total: this.totalPrice,
             paymentMethod: this.paymentMethod,
           })
