@@ -6,7 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate && cp -r api dist/api && cp .htaccess dist/.htaccess"
   },
   "dependencies": {
     "@nuxt/content": "^1.0.0",

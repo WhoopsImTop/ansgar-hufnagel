@@ -6,9 +6,24 @@
         <form autocomplete="on">
           <!-- From should ask for name, last_name, email, phone, address, city, state, zip, country  -->
           <input type="text" placeholder="Vorname" name="name" v-model="name" />
-          <input type="text" placeholder="Nachname" name="nachname" v-model="last_name" />
-          <input type="email" placeholder="Email" name="email" v-model="email" />
-          <input type="tel" placeholder="Telefon" name="phone" v-model="phone" />
+          <input
+            type="text"
+            placeholder="Nachname"
+            name="nachname"
+            v-model="last_name"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            v-model="email"
+          />
+          <input
+            type="tel"
+            placeholder="Telefon"
+            name="phone"
+            v-model="phone"
+          />
           <input
             type="text"
             name="street"
@@ -17,7 +32,12 @@
           />
           <input type="text" placeholder="Stadt" name="city" v-model="city" />
           <input type="text" placeholder="PLZ" name="zip" v-model="zip" />
-          <input type="text" placeholder="Bundesland" name="state" v-model="state" />
+          <input
+            type="text"
+            placeholder="Bundesland"
+            name="state"
+            v-model="state"
+          />
           <select placeholder="Land" name="land" v-model="country">
             <option
               v-for="country in defaultCountries"
@@ -27,7 +47,14 @@
               {{ country.name }}
             </option>
           </select>
-          <label><input type="checkbox" v-model="datenschutz" style="margin-right: 10px">Ich stimme den AGB's und der verarbeiterung meiner Daten gemäß der Datenschutzerklärung zu.</label>
+          <label
+            ><input
+              type="checkbox"
+              v-model="datenschutz"
+              style="margin-right: 10px"
+            />Ich stimme den AGB's und der verarbeiterung meiner Daten gemäß der
+            Datenschutzerklärung zu.</label
+          >
         </form>
       </div>
       <div class="checkout-information">
@@ -39,7 +66,13 @@
                 <tr v-for="item in line_items" :key="item.id">
                   <td>{{ item.name }}</td>
                   <td>{{ item.quantity }} x</td>
-                  <td>{{ item.reduction ? item.reduction.reduction_price.toFixed(2) : item.price.toFixed(2) }}€</td>
+                  <td>
+                    {{
+                      item.reduction
+                        ? item.reduction.reduction_price.toFixed(2)
+                        : item.price.toFixed(2)
+                    }}€
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -133,48 +166,44 @@ export default {
       }
     },
     generateCheckout() {
+        console.log(this.line_items);
       if (this.validateCheckout()) {
         this.loading = true;
-        if (this.paymentMethod == "paypal") {
-          let headers = {
-            "Access-Control-Allow-Headers": "*",
-          };
 
-          let data = JSON.stringify({
-            name: this.name,
-            last_name: this.last_name,
-            email: this.email,
-            phone: this.phone,
-            address: this.address,
-            city: this.city,
-            state: this.state,
-            zip: this.zip,
-            country: this.country,
-            lineItems: this.line_items,
-            total: this.totalPrice,
+        let data = JSON.stringify({
+          name: this.name,
+          last_name: this.last_name,
+          email: this.email,
+          phone: this.phone,
+          address: this.address,
+          city: this.city,
+          state: this.state,
+          zip: this.zip,
+          country: this.country,
+          lineItems: this.line_items,
+          total: this.totalPrice,
+        });
+
+        let config = {
+          method: "post",
+          maxBodyLength: Infinity,
+          url: "http://ansgar-hufnagel.de/api/checkout",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          data: data,
+        };
+
+        axios
+          .request(config)
+          .then((response) => {
+            window.location.href = response.data;
+            this.loading = false;
+          })
+          .catch((error) => {
+            console.log(error);
+            this.loading = false;
           });
-
-          let config = {
-            method: "post",
-            maxBodyLength: Infinity,
-            url: "http://api.farsight-festival.de/checkout",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            data: data,
-          };
-
-          axios
-            .request(config)
-            .then((response) => {
-              window.location.href = response.data;
-              this.loading = false;
-            })
-            .catch((error) => {
-              console.log(error);
-              this.loading = false;
-            });
-        }
       } else {
         alert("Bitte füllen Sie alle Felder aus.");
       }
@@ -184,10 +213,11 @@ export default {
     let cartItems = JSON.parse(localStorage.getItem("cartItems"));
     //get cartItems id and quantity and search id in products
     this.line_items = cartItems.map((item) => {
-      let product = this.produkte.find(
-        (product) => product.id == item.id
-      );
-      this.totalPrice += (product.reduction ? product.reduction.reduction_price : product.price) * item.quantity;
+      let product = this.produkte.find((product) => product.id == item.id);
+      this.totalPrice +=
+        (product.reduction
+          ? product.reduction.reduction_price
+          : product.price) * item.quantity;
       return {
         id: item.id,
         name: product.title,

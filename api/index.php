@@ -40,8 +40,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/api/c
     //decode json
     $json = json_decode($body, true);
     //create customer object
-    $customer = new customer($json['name'], $json['last_name'], $json['email'], $json['phone'], $json['lineItems'], $json['total'], $json['payment_method']);
-    $mail = new mail($json['name'], $json['last_name'], $json['email'], $json['phone'], $json['lineItems'], $json['total'], $json['payment_method']);
+    $customer = new customer($json['name'], $json['last_name'], $json['email'], $json['phone'], $json['street'], $json['city'], $json['zip'], $json['state'], $json['lineItems'], $json['total'], $json['payment_method']);
+    $mail = new mail($json['name'], $json['last_name'], $json['email'], $json['phone'], $json['street'], $json['city'], $json['zip'], $json['state'], $json['lineItems'], $json['total'], $json['payment_method']);
     $mail->sendConfirmationMail();
     //create customer in database
     $customer->create();
@@ -100,9 +100,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/api/c
         /* $querystring .= '&item_count=' . count($products) . '&amount=' . $total; */
         //return json response with url key
         //echo json_encode(array('url' => $paypal_url . $querystring));
-        echo json_encode(array('url' => 'https://farsight-festival.de/payment_success?cid=' . $customer->id . '&payment_method=' . $customer->payment_method));
+        echo json_encode(array('url' => 'https://ansgar-hufnagel.de/payment_success?cid=' . $customer->id . '&payment_method=' . $customer->payment_method));
     } else {
-        echo json_encode(array('url' => 'https://farsight-festival.de/payment_success?cid=' . $customer->id . '&payment_method=' . $customer->payment_method));
+        echo json_encode(array('url' => 'https://ansgar-hufnagel.de/payment_success?cid=' . $customer->id . '&payment_method=' . $customer->payment_method));
     }
 } else if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/api/approve_payment') {
     //get post body
@@ -275,22 +275,6 @@ http://curl.haxx.se/docs/caextract.html
     $votes = $db->resultSet();
     $db->close();
     echo json_encode(array('votes' => $votes));
-} else if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/api/vote') {
-    //get post body
-    $body = file_get_contents('php://input');
-    //decode json
-    $json = json_decode($body, true);
-    //get votes
-    $userVotes = $json['votes'];
-    //loop over each vote in the array and increment the vote count in the database and update last_vote sql timestamp
-    $dbConnection = new DB;
-    foreach ($userVotes as $vote) {
-        $db->query("UPDATE `votes` SET `votes` = `votes` + 1, `last_vote` = NOW() WHERE `id` = :id");
-        $db->bind(":id", $vote);
-        $db->execute();
-    }
-    $db->close();
-    echo json_encode(array('voted' => true));
 } else if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/api/user/create') {
     //handle user registration
     //get post body

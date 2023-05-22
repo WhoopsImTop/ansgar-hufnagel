@@ -8,6 +8,10 @@ class customer
     public $last_name;
     public $email;
     public $phone;
+    public $street;
+    public $city;
+    public $zip;
+    public $state;
     public $payment_method;
     public $payment_transaction_id;
     public $paypal_payer_id;
@@ -18,12 +22,16 @@ class customer
     public $created_at;
     public $updated_at;
 
-    public function __construct($name = "", $last_name = "", $email = "", $phone = "", $lineItems = [], $total = 0, $payment_method = "PayPal")
+    public function __construct($name = "", $last_name = "", $email = "", $phone = "", $street, $city, $zip, $state, $lineItems = [], $total = 0, $payment_method = "PayPal")
     {
             $this->name = $name;
             $this->last_name = $last_name;
             $this->email = $email;
             $this->phone = $phone;
+            $this->street = $street;
+            $this->city = $city;
+            $this->zip = $zip;
+            $this->state = $state;
             $this->lineItems = json_encode($lineItems);
             $this->total = $total;
             $this->payment_method = $payment_method;
@@ -102,6 +110,10 @@ class customer
             $db->bind(":last_name", $this->last_name);
             $db->bind(":email", $this->email);
             $db->bind(":phone", $this->phone);
+            $db->bind(":street", $this->street);
+            $db->bind(":city", $this->city);
+            $db->bind(":zip", $this->zip);
+            $db->bind(":state", $this->state);
             $db->bind(":payment_method", $this->payment_method);
             $db->bind(":payment_transaction_id", $this->payment_transaction_id);
             $db->bind(":paypal_payer_id", $this->paypal_payer_id);
@@ -130,6 +142,10 @@ class customer
         $db->bind(":last_name", $this->last_name);
         $db->bind(":email", $this->email);
         $db->bind(":phone", $this->phone);
+        $db->bind(":street", $this->street);
+        $db->bind(":city", $this->city);
+        $db->bind(":zip", $this->zip);
+        $db->bind(":state", $this->state);
         $db->bind(":payment_method", $this->payment_method);
         $db->bind(":payment_transaction_id", $this->payment_transaction_id);
         $db->bind(":paypal_payer_id", $this->paypal_payer_id);

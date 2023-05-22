@@ -27,14 +27,14 @@ class mail extends customer
         $mail->addAddress($this->email, $this->name . ' ' . $this->last_name);
 
         $mail->isHTML(true);
-        $mail->Subject = 'Farsight Festival Ticket Bestellung';
+        $mail->Subject = 'Ihre Bestellung bei Ansgar Hufnagel';
 
         $message = '<p style="color: #000000; font-size: 14px;">Hallo ' . $this->name  . ' ' . $this->last_name . ',<br>';
-        $message .= 'vielen Dank für deine Ticket Bestellung, deine Bestellnummer ist:' . $this->order_id . ' bei Fragen kannst du dich gerne an uns wenden.<br>';
-        $message .= 'Deine Bestellung:<br>';
+        $message .= 'vielen Dank für Ihre Bestellung, deine Bestellnummer ist:' . $this->order_id . ' bei Fragen können Sie sich gerne an mich wenden.<br>';
+        $message .= 'Ihre Bestellung:<br>';
         $message .= '<table style="width: 100%; border: 1px solid #000000; border-collapse: collapse; margin-top: 20px;">';
         $message .= '<tr style="border: 1px solid #000000; border-collapse: collapse;">';
-        $message .= '<th style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">Ticket</th>';
+        $message .= '<th style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">Produkt</th>';
         $message .= '<th style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">Anzahl</th>';
         $message .= '<th style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">Preis</th>';
         $message .= '</tr>';
@@ -44,26 +44,20 @@ class mail extends customer
             $message .= '<tr style="border: 1px solid #000000; border-collapse: collapse;">';
             $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['name'] . '</td>';
             $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['quantity'] . '</td>';
-            $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['price'] . '€</td>';
+            if ($lineItem['reduction']) {
+                $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['reduction_price'] . '€</td>';
+            } else {
+                $message .= '<td style="border: 1px solid #000000; border-collapse: collapse; padding: 10px;">' . $lineItem['price'] . '€</td>';
+            }
             $message .= '</tr>';
         }
         $message .= '</table>';
         $message .= '<br>';
         $message .= 'Gesamtpreis: ' . $this->total . '€<br>';
         $message .= '<br>';
-        $message .= 'Bezahlung: ' . $this->payment_method . '<br>';
-        $message .= '<br>';
-        if($this->payment_method == 'Überweisung') {
-            $message .= 'Bitte überweise den Gesamtbetrag auf folgendes Konto:<br>';
-            $message .= 'Kontoinhaber: ' . KONTO_INHABER . '<br>';
-            $message .= 'IBAN: ' . IBAN . '<br>';
-            $message .= 'BIC: ' . BIC . '<br>';
-            $message .= 'Verwendungszweck: Farsight Festival ' . $this->name . ' ' . $this->last_name . '<br>';
-        } else {
-            $message .= 'Bitte sende den Betrag an: <br> ' . PAYPAL_EMAIL . ' per PayPal Freunde und Familie.<br>';
-        }
+        $message .= 'Sie werden in kürze eine E-Mail von mir bekommen, mit einer Rechnung und Bezahlinformationen.<br>';
         $message .= '<br><br>';
-        $message .= 'Viele Grüße, Torben und Mauel</p>';
+        $message .= 'Viele Grüße, Ansgar Hufnagel</p>';
         $template = $this->mycomp_email_filter($message);
 
         $mail->Body = $template['message'];
@@ -71,8 +65,11 @@ class mail extends customer
 
         //send mail in php
         if (!$mail->send()) {
-            echo 'Message could not be sent.';
-            echo 'Mailer Error: ' . $mail->ErrorInfo;
+            //write to log File
+            $this->writeLog('Mail Error: ' . $mail->ErrorInfo . ' ' . $this->email);
+        } else {
+            //write to log File
+            $this->writeLog('Mail sent to: ' . $this->email);
         }
     }
 
@@ -89,12 +86,12 @@ class mail extends customer
 
     public function mycomp_email_details()
     {
-        
+
         $info = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Grüne Flotte Auto Abo</title>
+        <title>Ansgar Hufnagel Bestellung</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </head>';
 
@@ -103,7 +100,7 @@ class mail extends customer
         $info .= '<table border="0" cellpadding="0" cellspacing="0" style="background-color:#f8f8f8; width:775px; max-width:90%; margin:0 auto;" >';
 
         $info .= '<tr><td style="padding: 20px 0px 20px 0px;">';
-        $info .= '<img style="width: 250px" src="https://mein-campusplan.de/assets/image/logo.png" />';
+        $info .= '<img style="width: 250px" src="https://www.ansgar-hufnagel.de/logo.png" />';
         $info .= '</td></tr>';
 
         $info .= '<tr><td style="padding: 30px 30px 30px 30px; background-color:#FFFFFF; text-align:left; font-size:14px; color:#000000;">';
@@ -113,7 +110,7 @@ class mail extends customer
         $info .= '<tr><td style="text-align:center; font-size:10px; padding:30px 0px 0px 0px; color:#000000;">';
 
 
-        $info .= '&copy; ' . date("Y") . ' Farsight Festival. Alle Rechte vorbehalten';
+        $info .= '&copy; ' . date("Y") . ' Ansgar Hufnagel. Alle Rechte vorbehalten';
 
         $info .= '</td></tr>';
 
@@ -123,5 +120,12 @@ class mail extends customer
         $info .= '</body></html>';
 
         return $info;
+    }
+
+    public function writeLog($message)
+    {
+        $logFile = fopen('log.txt', 'a');
+        fwrite($logFile, date("Y-m-d H:i:s") . ' ' . $message . "\n");
+        fclose($logFile);
     }
 }
