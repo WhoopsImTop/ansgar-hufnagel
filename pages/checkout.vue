@@ -194,7 +194,7 @@ export default {
         axios
           .request(config)
           .then((response) => {
-            window.location.href = response.data;
+            window.location.href = response.data.url;
             this.loading = false;
           })
           .catch((error) => {
