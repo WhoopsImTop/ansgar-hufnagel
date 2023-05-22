@@ -40,7 +40,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/api/c
     //decode json
     $json = json_decode($body, true);
     //create customer object
-    $customer = new customer($json['name'], $json['last_name'], $json['email'], $json['phone'], $json['street'], $json['city'], $json['zip'], $json['state'], $json['lineItems'], $json['total'], $json['payment_method']);
+    try {
+        $customer = new customer($json['name'], $json['last_name'], $json['email'], $json['phone'], $json['street'], $json['city'], $json['zip'], $json['state'], $json['lineItems'], $json['total'], $json['payment_method']);
+    } catch (Exception $e) {
+        echo json_encode(array('error' => $e->getMessage()));
+    }
     $mail = new mail($json['name'], $json['last_name'], $json['email'], $json['phone'], $json['street'], $json['city'], $json['zip'], $json['state'], $json['lineItems'], $json['total'], $json['payment_method']);
     $mail->sendConfirmationMail();
     //create customer in database
@@ -48,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/api/c
     //return customer id
 
     if ($customer->payment_method == "PayPal") {
-/* 
+        /* 
         $lineItems = $customer->lineItems;
 
         $products = json_decode($lineItems, true);
