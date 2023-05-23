@@ -1,6 +1,12 @@
 <template>
   <div :style="positionStyle">
-    <h3 v-if="title" :class="image ? 'w-50' : ''">{{ title }}</h3>
+    <h3
+      v-if="title"
+      :style="position == 'mitte' ? 'text-align: center' : ''"
+      :class="image ? 'w-50' : ''"
+    >
+      {{ title }}
+    </h3>
     <p
       v-if="text"
       :class="image ? 'w-50' : ''"

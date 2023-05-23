@@ -45,7 +45,9 @@ export default {
     };
   },
   async beforeMount() {
-    console.log(this.quoteCategory);
+    if(window.innerWidth < 768) {
+      this.slidesToShow = 1;
+    }
     const testimonials = await this.$content("kundenmeinungen")
       .where({ category: this.quoteCategory })
       .fetch();

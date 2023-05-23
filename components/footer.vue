@@ -29,17 +29,8 @@
                     align-items: baseline;
                   "
                 >
-                  <div
-                    class="mc-field-group"
-                    style="
-                      width: 65%;
-                      display: flex;
-                      flex-direction: column;
-                      margin-right: 10px;
-                    "
-                  >
+                  <div class="mc-field-group">
                     <input
-                      style="width: 100%"
                       type="email"
                       value=""
                       placeholder="E-Mail Adresse"
@@ -83,22 +74,17 @@
         </div>
         <div class="col booking">
           <h3>Booking</h3>
-          <p style="margin-bottom: 10px">Kommen Sie mit mir ins Gespräch.</p>
+          <p>Kommen Sie mit mir ins Gespräch.</p>
           <p>
             <a
-              style="text-decoration: none; color: #000000; font-size: 20px"
+              style="text-decoration: none; color: #000000"
               href="tel:+49 151 19345725"
               >+49 151 19345725</a
             >
           </p>
           <p>
             <a
-              style="
-                text-decoration: none;
-                color: #000000;
-                font-size: 20px;
-                margin-top: 20px;
-              "
+              style="text-decoration: none; color: #000000; margin-top: 20px"
               href="mailto:mail@ansgarhufnagel.de"
               >mail@ansgarhufnagel.de</a
             >
@@ -152,4 +138,17 @@ export default {};
 </script>
 
 <style>
+
+.mc-field-group {
+  width: 65%;
+}
+.mc-field-group input {
+  width: calc(100% - 10px);
+}
+
+@media (max-width: 1200px) {
+  .mc-field-group {
+    width: 100%;
+  }
+}
 </style>

@@ -73,13 +73,13 @@ span {
   position: absolute;
 }
 
-.img-container:hover svg{
+.img-container:hover svg {
   cursor: pointer;
   animation: swing 1s ease-in-out;
 }
 
 .img-container .main-link {
-  margin-left: 80px
+  margin-left: 80px;
 }
 
 .nuxt-link {
@@ -153,7 +153,8 @@ span {
   flex-grow: 1;
 }
 
-.termin .link, .termin-link {
+.termin .link,
+.termin-link {
   text-decoration: none;
   color: var(--dark-text);
   align-self: center;
@@ -162,7 +163,8 @@ span {
   background-color: var(--primary-color);
 }
 
-.termin .link::before, .termin-link::before {
+.termin .link::before,
+.termin-link::before {
   content: ' ';
   position: absolute;
   left: 5px;
@@ -282,7 +284,7 @@ span {
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
-  width: max-content
+  width: max-content;
 }
 
 .product-btn:hover {
@@ -335,7 +337,7 @@ span {
   color: var(--light-text);
   width: 25px;
   height: 25px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -458,7 +460,8 @@ span {
   flex-direction: column;
 }
 
-.checkout-form form input, .checkout-form form select {
+.checkout-form form input,
+.checkout-form form select {
   padding: 10px 15px;
   margin-bottom: 10px;
   border: 1px solid #e0e0e0;
@@ -718,7 +721,9 @@ td {
   background-image: linear-gradient(90deg, transparent 50%, black 50%);
 }
 
-.booking h3, .booking p, .booking a {
+.booking h3,
+.booking p,
+.booking a {
   color: var(--light-text) !important;
 }
 
@@ -776,7 +781,7 @@ td {
   background-color: var(--primary-color);
   z-index: 999;
   z-index: 1000;
-  animation: fadeOut 1s .2s ease-in-out;
+  animation: fadeOut 1s 0.2s ease-in-out;
 }
 
 .shop-items {
@@ -861,7 +866,7 @@ td {
 
   p {
     font-size: 16px;
-    line-height: 23px;
+    line-height: 25px;
   }
 
   .link-container {
@@ -873,7 +878,7 @@ td {
   }
 
   .img-container .main-link {
-    margin-left: 40px
+    margin-left: 40px;
   }
 
   .link-container.active {
@@ -990,6 +995,23 @@ td {
     justify-content: flex-start;
   }
 
+  .testimonial-image {
+    height: 70px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+
+  .testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .terminliste {
+    max-height: 100%;
+    overflow: visible;
+  }
+
   /* footer content */
   .footer-content .content-container {
     display: flex;
@@ -999,7 +1021,6 @@ td {
   .footer-content .highlighted {
     background-image: linear-gradient(180deg, transparent 50%, black 50%);
   }
-  
 
   .footer .contact {
     margin-left: 0px;
@@ -1030,11 +1051,11 @@ td {
     display: flex;
     flex-direction: column;
   }
-  
+
   .w-50 {
     width: 100%;
   }
-  
+
   .content-row .image {
     position: relative;
     left: 0;
@@ -1044,7 +1065,7 @@ td {
     background-size: cover;
     background-position: center;
   }
-  
+
   .content-row .image img {
     width: 100%;
     height: 100%;
@@ -1108,6 +1129,10 @@ td {
     z-index: 999;
   }
 
+  .card-actions {
+    justify-content: flex-start;
+  }
+
   .closeBtn {
     display: flex;
     justify-content: center;
@@ -1117,7 +1142,7 @@ td {
     height: 40px;
     border-radius: 50px;
     color: #ffffff;
-    background-color:#bd4141;
+    background-color: #bd4141;
     position: absolute;
     top: -20px;
     right: 0px;
@@ -1136,7 +1161,7 @@ td {
     border: 1px solid var(--primary-light-gray);
     border-radius: 5px;
     margin-top: 40px;
-    padding: 20px
+    padding: 20px;
   }
 
   .checkout-options {

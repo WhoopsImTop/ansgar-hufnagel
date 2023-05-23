@@ -90,6 +90,10 @@ export default {
 }
 
 @media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 48%));
+  }
+
   .gallery-lightbox__content__image img {
     width: 80vw;
     height: auto;
