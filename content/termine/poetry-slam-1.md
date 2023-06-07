@@ -1,6 +1,6 @@
 ---
 title: Slam 46 - Moderation
-date: 2023-06-20T06:00:13.750Z
+date: 2023-06-20T18:00:13.750Z
 ort: Theater Bar, Freiburg
 location: '{"type":"Point","coordinates":[7.8450723,47.9950751]}'
 link: https://ticket.theater.freiburg.de/THEAweb2/theaweb.php?modus=&modul=saalplan&skin=&param=E150003
