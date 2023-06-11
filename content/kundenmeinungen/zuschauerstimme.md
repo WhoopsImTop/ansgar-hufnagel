@@ -1,6 +1,6 @@
 ---
 title: Zuschauerstimme
-company: Frank P.
+company: Uke Frank
 image: /img/referenzen-homepage.jpg
 category: Kabarett
 ---
