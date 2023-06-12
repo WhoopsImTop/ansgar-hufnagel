@@ -17,21 +17,21 @@ content:
     position: mitte
   - title: Gallerie
     gallery:
+      - image: /img/herrtausendsassa-instagram.jpg
       - image: /img/slam_märz-21.jpg
       - image: /img/5.jpg
       - image: /img/66.jpg
       - image: /img/2.jpg
-      - image: /img/6.jpg
       - image: /img/4.jpg
       - image: /img/3.jpg
       - image: /img/44.jpg
       - image: /img/11.jpg
       - image: /img/33.jpg
-      - image: /img/herrtausendsassa-instagram11.jpg
       - image: /img/3-kopie.jpg
       - image: /img/2-kopie.jpg
       - image: /img/4-kopie.jpg
       - image: /img/1.jpg
+      - image: /img/6.jpg
       - image: /img/5-kopie.jpg
     highlight: true
   - title: Referenzen
