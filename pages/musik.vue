@@ -79,7 +79,15 @@ export default {
   layout: "default",
   async asyncData({ $content }) {
     const page = await $content("seiten", "musik").fetch();
-    return { page };
+    let termine = await $content("termine").fetch();
+    //remove termine that are in the past of today
+    termine = termine.filter((termin) => {
+      return new Date(termin.date) >= new Date();
+    });
+    termine.sort((a, b) => {
+      return new Date(a.date) - new Date(b.date);
+    });
+    return { page, termine };
   },
   data() {
     return {};

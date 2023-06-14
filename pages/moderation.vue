@@ -20,7 +20,7 @@ import componentRenderer from "~/components/componentRenderer.vue";
 export default {
   head() {
     return {
-      title: 'Ansgar Hufnagel | ' + this.page.title,
+      title: "Ansgar Hufnagel | " + this.page.title,
       meta: [
         {
           hid: "description",
@@ -68,11 +68,18 @@ export default {
     const testimonials = await $content("kundenmeinungen")
       .where({ category: "Moderation" })
       .fetch();
-    return { page, testimonials };
+    let termine = await $content("termine").fetch();
+    //remove termine that are in the past of today
+    termine = termine.filter((termin) => {
+      return new Date(termin.date) >= new Date();
+    });
+    termine.sort((a, b) => {
+      return new Date(a.date) - new Date(b.date);
+    });
+    return { page, testimonials, termine };
   },
   data() {
-    return {
-    };
+    return {};
   },
 };
 </script>

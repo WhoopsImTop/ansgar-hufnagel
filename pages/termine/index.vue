@@ -28,13 +28,12 @@ export default {
       .where({ category: "Termine" })
       .fetch();
     let termine = await $content("termine").fetch();
+    //remove termine that are in the past of today
+    termine = termine.filter((termin) => {
+      return new Date(termin.date) >= new Date();
+    });
     termine.sort((a, b) => {
       return new Date(a.date) - new Date(b.date);
-    });
-    termine.forEach((termin, index) => {
-      if (new Date(termin.date) < new Date()) {
-        termine.splice(index, 1);
-      }
     });
     return { page, testimonials, termine };
   },
