@@ -1,7 +1,7 @@
 ---
 title: Poetry Slam - Moderation
-date: 2023-09-22T18:00:22.333Z
-ort: Mediathek, Bad Krozingen
+date: 2023-09-22T17:00:50.793Z
+ort: Litschgikeller, Bad Krozingen
 location: '{"type":"Point","coordinates":[7.6991029,47.919741]}'
 alternativeDate:
   show: false
